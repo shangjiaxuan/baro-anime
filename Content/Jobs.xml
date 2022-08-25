@@ -19,9 +19,7 @@
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="captainscap1" equip="true" />
         <Item identifier="captainsuniform1" equip="true" outfit="true" />
-        <Item identifier="headset" equip="true" showpreview="false">
-          <Item identifier="batterycell" showpreview="false" />
-        </Item>
+        <Item identifier="headset" equip="true" showpreview="false" />
         <Item identifier="revolver" equip="false">
           <Item identifier="revolverround" />
           <Item identifier="revolverround" />
@@ -40,9 +38,7 @@
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="captainscap2" equip="true" />
         <Item identifier="captainsuniform2" equip="true" outfit="true" />
-        <Item identifier="headset" equip="true" showpreview="false">
-          <Item identifier="batterycell" showpreview="false" />
-        </Item>
+        <Item identifier="headset" equip="true" showpreview="false" />
         <Item identifier="revolver" equip="false">
           <Item identifier="revolverround" />
           <Item identifier="revolverround" />
@@ -61,9 +57,7 @@
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="captainscap3" equip="true" />
         <Item identifier="captainsuniform3" equip="true" outfit="true" />
-        <Item identifier="headset" equip="true" showpreview="false">
-          <Item identifier="batterycell" showpreview="false" />
-        </Item>
+        <Item identifier="headset" equip="true" showpreview="false" />
         <Item identifier="Wf_Admiral_Katana" equip="false" />
         <Item identifier="Wf_Admiral_Wakizashi" equip="false" />
         <Item identifier="harmonica" equip="false" />

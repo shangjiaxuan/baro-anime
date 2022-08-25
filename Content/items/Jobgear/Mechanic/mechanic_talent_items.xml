@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Items>
-  <Override>
+<Override>
+  <Items>
+    <!-- 安全背带:修改贴图 -->
     <Item name="" identifier="safetyharness" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
-      <Price baseprice="120" soldeverywhere="false">
-        <Price locationtype="outpost" multiplier="1.2" sold="false" />
-        <Price locationtype="city" multiplier="1.2" sold="false" />
-        <Price locationtype="research" multiplier="1.0" sold="false" />
-        <Price locationtype="military" multiplier="1.0" sold="false" />
-        <Price locationtype="mine" multiplier="1.2" sold="false" />
+      <PreferredContainer primary="crewcab" secondary="engcab" />
+      <Price baseprice="120" sold="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+        <Price storeidentifier="merchantcity" multiplier="1.2" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" multiplier="1.2" />
       </Price>
       <Deconstruct time="20">
         <Item identifier="rubber" />
@@ -16,9 +18,9 @@
       </Deconstruct>
       <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
         <RequiredSkill identifier="mechanical" level="25" />
-        <RequiredItem identifier="rubber" />
+        <RequiredItem identifier="rubber" amount="2" />
         <RequiredItem identifier="steel" />
-        <RequiredItem identifier="organicfiber" />
+        <RequiredItem identifier="organicfiber" amount="2" />
       </Fabricate>
       <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="198,132,67,57" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="58,326,143,40" depth="0.6" origin="0.5,0.5" />
@@ -38,5 +40,5 @@
         <StatValue stattype="FlowResistance" value="0.9" />
       </Wearable>
     </Item>
-  </Override>
-</Items>
+  </Items>
+</Override>

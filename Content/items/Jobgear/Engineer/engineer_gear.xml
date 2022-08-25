@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
   <Items>
+    <!--修改贴图-->
     <Item name="" identifier="orangejumpsuit1" aliases="orangejumpsuit" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
-      <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
-      <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+      <PreferredContainer primary="crewcab" />
+      <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
       <Price baseprice="150">
-        <Price locationtype="outpost" multiplier="1" minavailable="1" />
-        <Price locationtype="city" multiplier="0.9" minavailable="1" />
-        <Price locationtype="research" multiplier="1" minavailable="1" />
-        <Price locationtype="military" multiplier="1" minavailable="1" />
-        <Price locationtype="mine" multiplier="1" minavailable="1" />
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantresearch" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" minavailable="1" />
+        <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
-      <Deconstruct time="10" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon name="Engineer Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,150,128,107" origin="0.5,0.5" />
       <Sprite name="Engineer Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="375,293,121,64" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -35,17 +38,20 @@
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" />
       </Wearable>
     </Item>
+    <!--修改贴图-->
     <Item name="" identifier="orangejumpsuit2" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
-      <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
-      <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+      <PreferredContainer primary="crewcab" />
+      <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
       <Price baseprice="150">
-        <Price locationtype="outpost" multiplier="1" minavailable="1" />
-        <Price locationtype="city" multiplier="0.9" minavailable="1" />
-        <Price locationtype="research" multiplier="1" minavailable="1" />
-        <Price locationtype="military" multiplier="1" minavailable="1" />
-        <Price locationtype="mine" multiplier="1" minavailable="1" />
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantresearch" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" minavailable="1" />
+        <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
-      <Deconstruct time="10" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon name="Engineer Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="384,27,127,101" origin="0.5,0.5" />
       <Sprite name="Engineer Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="511,293,119,57" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />

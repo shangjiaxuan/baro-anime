@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
+  <!--修改：更改光照贴图；可充 refillableoxygensource-->
   <Items>
-    <Item name="" identifier="divingmask" scale="0.5" category="Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+    <!--修改：在hull内不消耗氧气；hull含氧量大于50缓慢回复氧气-->
+    <Item name="" identifier="divingmask" scale="0.5" category="diving" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
       <Price baseprice="100">
         <Price locationtype="outpost" multiplier="0.9" minavailable="5" />
         <Price locationtype="city" multiplier="0.85" minavailable="7" />
@@ -23,15 +25,66 @@
         <RequiredItem identifier="rubber" />
       </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="515,322,57,62" origin="0.5,0.5" />
-      <Sprite name="Diving Mask" texture="Content/Items/InventoryIconAtlas.png" sourcerect="515,322,57,62" origin="0.5,0.5" />
+      <Sprite name="Diving Mask" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.55" sourcerect="226,326,69,68" origin="0.5,0.5" />
       <Body width="40" height="35" density="15" />
       <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-        <sprite name="Diving Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" hideotherwearables="false" sourcerect="206,318,84,80" origin="0.52,0.4" hidewearablesoftype="moustache,beard" />
-        <StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
-        <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">
+        <sprite name="Diving Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" hideotherwearables="false" sourcerect="226,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+        <!-- 使用hull氧气 -->
+        <StatusEffect type="OnWearing" target="Character" OxygenAvailable="0.0" UseHullOxygen="true" />
+        <!-- Hull氧含量大于50％且不在水中，缓慢回复氧气、液氧罐耐久 -->
+        <StatusEffect type="Always" target="Contained" Condition="0.3333" targetslot="0" comparison="And">
+          <RequiredItem items="oxygentank,oxygenitetank" type="Contained" excludebroken="false" />
+          <Conditional HullOxygenPercentage="gt 50" />
+          <Conditional InWater="false" />
+        </StatusEffect>
+        <!-- Hull氧含量小于50％时  启用内置氧气罐/液氧罐 -->
+        <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
           <Conditional IsDead="false" />
+          <Conditional HullOxygenPercentage="lt 50" />
+          <Conditional InWater="false" />
+          <Conditional decreasedoxygenconsumption="lt 100" />
           <RequiredItem items="oxygentank" type="Contained" />
         </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+          <Conditional IsDead="false" />
+          <Conditional HullOxygenPercentage="lt 50" />
+          <Conditional InWater="false" />
+          <Conditional decreasedoxygenconsumption="lt 100" />
+          <RequiredItem items="oxygeniteshard" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+          <Conditional IsDead="false" />
+          <Conditional HullOxygenPercentage="lt 50" />
+          <Conditional InWater="false" />
+          <Conditional decreasedoxygenconsumption="lt 100" />
+          <RequiredItem items="oxygenitetank" type="Contained" />
+        </StatusEffect>
+        <!-- 在水中时  启用内置氧气罐/液氧罐 -->
+        <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+          <Conditional InWater="true" />
+          <Conditional decreasedoxygenconsumption="lt 100" />
+          <RequiredItem items="oxygentank" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+          <Conditional InWater="true" />
+          <Conditional decreasedoxygenconsumption="lt 100" />
+          <RequiredItem items="oxygeniteshard" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+          <Conditional InWater="true" />
+          <Conditional decreasedoxygenconsumption="lt 100" />
+          <RequiredItem items="oxygenitetank" type="Contained" />
+        </StatusEffect>
+        <!-- 移动速度加成 -->
+        <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.1" setvalue="true" comparison="Or">
+          <Conditional IsDead="false" />
+          <RequiredItem items="oxygeniteshard" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+          <Conditional IsDead="false" />
+          <RequiredItem items="oxygenitetank" type="Contained" />
+        </StatusEffect>
+        <!-- 吸油 -->
         <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
           <Conditional IsDead="false" />
           <RequiredItem items="weldingfueltank" type="Contained" />
@@ -40,20 +93,13 @@
           <RequiredItem items="incendiumfueltank" type="Contained" />
           <Affliction identifier="burn" amount="0.1" />
         </StatusEffect>
-        <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
-          <Conditional IsDead="false" />
-          <RequiredItem items="oxygenitetank" type="Contained" />
-        </StatusEffect>
-        <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
-          <Conditional IsDead="false" />
-          <RequiredItem items="oxygenitetank" type="Contained" />
-        </StatusEffect>
       </Wearable>
       <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
         <Containable items="oxygensource,weldingtoolfuel" />
       </ItemContainer>
     </Item>
-    <Item name="" identifier="divingsuit" category="Equipment" tags="diving,deepdiving,provocative,respawnsuit" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <!--修改贴图-->
+    <Item name="" identifier="divingsuit" category="diving" tags="diving,deepdiving,provocative,respawnsuit" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
       <Price baseprice="250">
         <Price locationtype="outpost" multiplier="0.9" minavailable="2" />
         <Price locationtype="city" multiplier="0.85" minavailable="4" />
@@ -88,7 +134,7 @@
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
-            <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
         <sprite name="Regular Diving Suit Torso" texture="reg_DivingSuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -159,7 +205,8 @@
       </ItemContainer>
       <aitarget maxsightrange="1500" />
     </Item>
-    <Item name="" identifier="underwaterscooter" category="Equipment" Tags="smallitem,provocative,scooter" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" isshootable="true" requireaimtouse="True">
+    <!--水下助推器
+	<Item name="" identifier="underwaterscooter" category="diving" Tags="smallitem,provocative,scooter" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" isshootable="true" requireaimtouse="True">
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
       <Price baseprice="150">
         <Price locationtype="outpost" multiplier="0.9" minavailable="4" />
@@ -195,15 +242,16 @@
         </StatusEffect>
         <sound file="%ModDir%/Content/Items/Diving/ScooterLoop.ogg" type="OnUse" range="500.0" loop="true" />
         <LightComponent LightColor="1.0,1.0,1.0,0.8" range="1000">
-          <LightTexture texture="Content/Lights/lightcone.png" origin="-0.01, 0.5" size="1.0,1.0" />
+          <LightTexture texture="%ModDir%/Content/Lights/lightcone.png" origin="-0.01, 0.5" size="1.0,1.0" />
         </LightComponent>
       </Propulsion>
       <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
         <Containable items="mobilebattery" />
       </ItemContainer>
       <AiTarget soundrange="3000" maxsightrange="3000" />
-    </Item>
-    <Item name="" identifier="abyssdivingsuit" category="Equipment" tags="diving,deepdiving,provocative,respawnsuitdeep" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    </Item>-->
+    <!--修改贴图-->
+    <Item name="" identifier="abyssdivingsuit" category="diving" tags="diving,deepdiving,provocative,respawnsuitdeep" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
       <Price baseprice="430" minleveldifficulty="25">
         <Price locationtype="outpost" multiplier="0.9" minavailable="1" />
         <Price locationtype="city" multiplier="0.85" minavailable="2" />
@@ -238,7 +286,7 @@
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
-            <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
         <sprite name="Abyss Diving Suit Torso" texture="Abyss_DivingSuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -263,7 +311,7 @@
         <!-- Refill oxygen when the suit is contained. -->
         <StatusEffect type="OnContained" target="Contained" Condition="1.0">
           <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
-          <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+          <RequiredItem items="refillableoxygensource" type="Contained" excludebroken="false" />
         </StatusEffect>
         <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.15" comparison="Or">
           <Conditional IsDead="false" />
@@ -307,7 +355,8 @@
       </ItemContainer>
       <aitarget maxsightrange="1500" />
     </Item>
-    <Item name="" identifier="combatdivingsuit" category="Equipment" tags="diving,deepdiving,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <!--修改贴图-->
+    <Item name="" identifier="combatdivingsuit" category="diving" tags="diving,deepdiving,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
       <Price baseprice="430" minleveldifficulty="25">
         <Price locationtype="outpost" multiplier="0.9" sold="false" />
         <Price locationtype="city" multiplier="0.85" minavailable="2" />
@@ -336,7 +385,7 @@
     -->
       <Sprite name="Combat Diving Suit Item" texture="%ModDir%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
       <ContainedSprite name="Combat Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="181,0,70,192" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Combat Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Containers/containers.png" sourcerect="215,379,80,207" depth="0.55" origin="-0.12,-0.14" />
+      <ContainedSprite name="Combat Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Containers/containers.png" sourcerect="215,379,80,207" depth="0.55" origin="-0.12,-0.13" />
       <ContainedSprite name="Combat Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
       <Body radius="45" width="34" density="15" />
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
@@ -345,7 +394,7 @@
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
-            <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
         <sprite name="Combat Diving Suit Torso" texture="combat_DivingSuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -370,7 +419,7 @@
         <!-- Refill oxygen when the suit is contained. -->
         <StatusEffect type="OnContained" target="Contained" Condition="1.0">
           <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
-          <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+          <RequiredItem items="refillableoxygensource" type="Contained" excludebroken="false" />
         </StatusEffect>
         <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
           <Conditional IsDead="false" />
