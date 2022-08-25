@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <entityname.Wf_Admiral_Katana>Katana</entityname.Wf_Admiral_Katana>
+  <entitydescription.Wf_Admiral_Katana>A melee weapon of Eastern countries on earth, which is very easy to cause bloodshed</entitydescription.Wf_Admiral_Katana>
+  <entityname.Wf_Admiral_Wakizashi>Wakizashi</entityname.Wf_Admiral_Wakizashi>
+  <entitydescription.Wf_Admiral_Wakizashi>A melee weapon of Eastern countries on earth, shorter than Katana</entitydescription.Wf_Admiral_Wakizashi>
+  <entityname.Wf_Blame_harpoongun>Electricity based harpoon launcher</entityname.Wf_Blame_harpoongun>
+  <entitydescription.Wf_Blame_harpoongun>The unidentified man-made weapon brought back from the deep sea, the legendary electricity fisher's weapon, the harpoon launched through electromagnetic force has extremely high penetration, It seems to be compatible with the standard batteries we use.</entitydescription.Wf_Blame_harpoongun>
+  <entityname.Wf_Blame_spear>Electricity based harpoon</entityname.Wf_Blame_spear>
+  <entitydescription.Wf_Blame_spear>The legendary electricity fisher's weapon，extremely hard</entitydescription.Wf_Blame_spear>
+  <entityname.Wf_Blame_batterycell>Battery for the electricity based harpoon launcher</entityname.Wf_Blame_batterycell>
+  <entitydescription.Wf_Blame_batterycell>The battery of the electricity based harpoon launcher, not compatible with our appliances and chargers. </entitydescription.Wf_Blame_batterycell>
+  <!--
+  <entityname.Wf_Armorlining>Armor lining</entityname.Wf_Armorlining>
+  <entitydescription.Wf_Armorlining>An armor lining can be mounted inside the helmet,which can improve the defense of the helmet</entitydescription.Wf_Armorlining>
+  -->
+  <entityname.Wf_pucs>EPSP</entityname.Wf_pucs>
+  <entitydescription.Wf_pucs>Experimental Pressure Stabilized PUCS: An PUCS using experimental technology to replace heavy shell with pressure stabilize, has better vision and mobility than ordinary PUCS.</entitydescription.Wf_pucs>
+  <entityname.Wf_pucs_R>Combat EPSP</entityname.Wf_pucs_R>
+  <entitydescription.Wf_pucs_R>Targeted improved EPSP, using ballistic fiber to strengthen the defense against attacks.</entitydescription.Wf_pucs_R>
+  <entityname.Wf_pucs_B>Abyss EPSP</entityname.Wf_pucs_B>
+  <entitydescription.Wf_pucs_B>Targeted improved EPSP, using ballistic fiber and titanium aluminum to strengthen the defense. While maintaining excellent burn defense, it has the defense and pressure resistance of the standard abyss diving suit.</entitydescription.Wf_pucs_B>
+  <entityname.Wf_pucs_D>Special operations EPSP</entityname.Wf_pucs_D>
+  <entitydescription.Wf_pucs_D>Targeted improved EPSP, It uses low visibility coating and strengthens the defense against human weapons. It's also Equipped with small thrusters for rapid movement of warfighters outside the operational area.</entitydescription.Wf_pucs_D>
+</infotexts>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文（简体）">
+  <entityname.Wf_Admiral_Katana>太刀</entityname.Wf_Admiral_Katana>
+  <entitydescription.Wf_Admiral_Katana>蓝星东方国家的一种近战武器，十分容易造成流血</entitydescription.Wf_Admiral_Katana>
+  <entityname.Wf_Admiral_Wakizashi>胁差</entityname.Wf_Admiral_Wakizashi>
+  <entitydescription.Wf_Admiral_Wakizashi>蓝星东方国家的一种近战武器，比太刀要短</entitydescription.Wf_Admiral_Wakizashi>
+  <entityname.Wf_Blame_harpoongun>电基鱼叉发射器</entityname.Wf_Blame_harpoongun>
+  <entitydescription.Wf_Blame_harpoongun>深海中带回的不明人造物品，传说中电基渔师的武器，透过电磁力发射的鱼叉具有极高的穿透力，似乎兼容我们使用的标准电池</entitydescription.Wf_Blame_harpoongun>
+  <entityname.Wf_Blame_spear>电基鱼叉</entityname.Wf_Blame_spear>
+  <entitydescription.Wf_Blame_spear>传说中电基渔师的武器，硬度极高</entitydescription.Wf_Blame_spear>
+  <entityname.Wf_Blame_batterycell>电基鱼叉发射器电池</entityname.Wf_Blame_batterycell>
+  <entitydescription.Wf_Blame_batterycell>电基鱼叉发射器配套的电池，无法兼容我们的电器与充电器，仅供电基鱼叉发射器使用</entitydescription.Wf_Blame_batterycell>
+  <!--
+  <entityname.Wf_Armorlining>装甲内衬</entityname.Wf_Armorlining>
+  <entitydescription.Wf_Armorlining>可以安装在头盔内部的装甲内衬，能有效地提高头盔的防御力</entitydescription.Wf_Armorlining>
+  -->
+  <entityname.Wf_pucs>EPSP</entityname.Wf_pucs>
+  <entitydescription.Wf_pucs>实验性压力稳定PUCS（Experimental Pressure Stabilized PUCS）：使用实验性技术，将压力稳定剂替代厚重外壳的潜水服，与普通PUCS相比拥有更好的视野与机动性。</entitydescription.Wf_pucs>
+  <entityname.Wf_pucs_R>战斗型EPSP</entityname.Wf_pucs_R>
+  <entitydescription.Wf_pucs_R>针对性改进型EPSP，使用防弹纤维强化了抵御部分攻击的防御力。</entitydescription.Wf_pucs_R>
+  <entityname.Wf_pucs_B>深潜型EPSP</entityname.Wf_pucs_B>
+  <entitydescription.Wf_pucs_B>针对性改进型EPSP，使用防弹纤维与钛铝合金强化了防御力，在保持了优秀烧伤防御的同时拥有标准深渊潜水服的防御力与压力抵抗。</entitydescription.Wf_pucs_B>
+  <entityname.Wf_pucs_D>特种作战EPSP</entityname.Wf_pucs_D>
+  <entitydescription.Wf_pucs_D>针对性改进型EPSP，使用了低可见性涂装并针对性对人类武器强化了防御力，并配备了小型推进器以便作战人员在作战区域外快速转移。</entitydescription.Wf_pucs_D>
+</infotexts>
