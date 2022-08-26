@@ -20,7 +20,9 @@
   <Item file="%ModDir%/Content/items/Genetic/genetic.xml" />
   <Item file="%ModDir%/Content/items/Weapons/Waifu_weapons.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/Commoner/commoner_gear.xml" />
+  <!-- removed
   <Item file="%ModDir%/Content/items/Tools/tools.xml" />
+  -->
   <Character file="%ModDir%/Content/Characters/Human/Human.xml" />
   <Character file="%ModDir%/Content/Characters/Humanhusk/Humanhusk.xml" />
   <Text file="%ModDir%/Content/Texts/SimplifiedChinese.xml" />

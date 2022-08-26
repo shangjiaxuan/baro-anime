@@ -4,6 +4,7 @@
     <!--以后再说吧-->
   </EventSprites>
   <EventPrefabs>
+    <!-- removed
     <ScriptedEvent identifier="missionevent_EAHI1" commonness="100">
       <SpawnAction npcsetidentifier="EAHInpc" npcidentifier="EAHInpc_1" targettag="EAHInpc_1" spawnlocation="Outpost" targetmoduletags="adminmodule" />
       <ConversationAction text="EventText.missionevent_EAHI1.c1" speakertag="EAHInpc_1" endeventifinterrupted="false" dialogtype="Small" />
@@ -11,6 +12,7 @@
       <MissionAction missiontag="EAHI_N" />
       <NPCWaitAction npctag="EAHInpc_1" wait="true" />
     </ScriptedEvent>
+    -->
     <ScriptedEvent identifier="missionevent_EAHI2" commonness="100">
       <SpawnAction npcsetidentifier="EAHInpc" npcidentifier="EAHInpc_2" targettag="EAHInpc_2" spawnlocation="Outpost" targetmoduletags="adminmodule" />
       <ConversationAction text="EventText.missionevent_EAHI2.c1" speakertag="EAHInpc_2" endeventifinterrupted="false" dialogtype="Small" />
@@ -21,7 +23,9 @@
   </EventPrefabs>
   <EventSet identifier="outposteventsEAHI" leveltype="outpost" locationtype="outpost,city,research,military,mine" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true">
     <EventSet identifier="outposteventsEAHI.ALL.generic.missionevents" minleveldifficulty="20" maxleveldifficulty="100" allowatstart="true" chooserandom="true" eventcount="1">
+      <!-- removed
       <ScriptedEvent identifier="missionevent_EAHI1" commonness="100" />
+      -->
       <ScriptedEvent identifier="missionevent_EAHI2" commonness="110" />
       <!--<ScriptedEvent identifier="missionevent_PP" commonness="200" />
 	  <ScriptedEvent identifier="missionevent_MLK" commonness="100" />

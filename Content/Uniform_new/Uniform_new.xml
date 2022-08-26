@@ -240,6 +240,7 @@
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" />
       </Wearable>
     </Item>
+    <!-- removed
     <Item name="" identifier="AK12uniform" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -274,6 +275,7 @@
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" />
       </Wearable>
     </Item>
+  -->
     <!--M45:有点丑
   <Item name="" identifier="M45uniform1" aliases="M45uniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
@@ -345,6 +347,7 @@
     </Wearable>
   </Item>-->
     <!--凯尔希-->
+    <!-- removed
     <Item name="" identifier="Kaltsituniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -384,7 +387,9 @@
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.3" damagesound="LimbArmor" />
       </Wearable>
     </Item>
+    -->
     <!--圣宣-->
+    <!-- removed
     <Item name="" identifier="shengxuanuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -424,6 +429,7 @@
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.7" probabilitymultiplier="0.3" damagesound="LimbArmor" />
       </Wearable>
     </Item>
+    -->
     <!--哥特长裙-->
     <Item name="" identifier="GTCQuniform1" aliases="GTCQuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer secondary="abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -570,6 +576,7 @@
       </Wearable>
     </Item>
     <!--黑钢制服-f-->
+    <!-- removed
     <Item name="" identifier="HeiTieuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -602,7 +609,9 @@
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
       </Wearable>
     </Item>
+    -->
     <!--黑钢制服-l-->
+    <!-- removed
     <Item name="" identifier="HeiTieuniform2" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -635,7 +644,9 @@
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
       </Wearable>
     </Item>
+    -->
     <!--武装JK-->
+    <!-- removed
     <Item name="" identifier="ArmedJKuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -668,6 +679,7 @@
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
       </Wearable>
     </Item>
+    -->
     <!--紧身战斗服mk1-->
     <Item name="" identifier="tight_combatsuit_1" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
@@ -735,6 +747,7 @@
       </Wearable>
     </Item>
     <!--露肩毛衣-->
+    <!-- removed
     <Item name="" identifier="LJMYuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer secondary="abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.1" />
       <PreferredContainer primary="wreckstoragecab" spawnprobability="0.09" />
@@ -769,7 +782,9 @@
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" />
       </Wearable>
     </Item>
+  -->
     <!--水手服-->
+    <!-- removed
     <Item name="" identifier="ShuiShouFuuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer secondary="abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.1" />
       <PreferredContainer primary="wreckstoragecab" spawnprobability="0.09" />
@@ -804,6 +819,7 @@
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" />
       </Wearable>
     </Item>
+    -->
     <!--hats-->
     <Item name="" identifier="shengxuanhats" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,clownmask" description="" hideinmenus="false" scale="0.50">
       <Price baseprice="1" sold="false" canbespecial="false" />
