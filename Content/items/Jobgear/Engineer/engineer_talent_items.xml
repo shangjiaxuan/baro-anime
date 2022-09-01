@@ -118,6 +118,7 @@
   </Override>
   <Item identifier="Wf_pucs">
     <inherit identifier="pucs">
+      <doinherit/>
       <replace sel="./@tags">
         diving,deepdiving,divinggear_wearableindoors,provocative,Wf_diving
       </replace>
@@ -180,6 +181,7 @@
   </Item>
   <Item identifier="Wf_pucs_R">
     <inherit identifier="Wf_pucs">
+      <doinherit/>
       <del sel="./Wearable/sprite"/>
       <add sel="./Wearable">
         <sprite name="PUCS Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="474,0,45,103" origin="0.54,0.64">
@@ -240,6 +242,7 @@
   </Item>
   <Item identifier="Wf_pucs_B">
     <inherit identifier="Wf_pucs">
+      <doinherit/>
       <del sel="./Wearable/sprite"/>
       <add sel="./Wearable">
         <sprite name="PUCS Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="519,0,45,103" origin="0.54,0.64">
@@ -304,6 +307,7 @@
   </Item>
   <Item identifier="Wf_pucs_D">
     <inherit identifier="Wf_pucs">
+      <doinherit/>
       <del sel="./Wearable/sprite"/>
       <add sel="./Wearable">
         <sprite name="PUCS Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="564,0,45,103" origin="0.54,0.64">
