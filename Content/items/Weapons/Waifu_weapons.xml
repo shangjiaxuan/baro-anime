@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <Override>
+    <Item identifier="smg">
+      <inherit identifier="smg">
+      </inherit>
+      <InventoryIcon texture="Overrided.png" sourcerect="0,0,177,69" origin="0.5,0.5" />
+      <Sprite texture="Overrided.png" sourcerect="0,0,177,69" depth="0.55" origin="0.5,0.5" />
+    </Item>
+    <Item identifier="smgmagazine">
+      <inherit identifier="smgmagazine">
+      </inherit>
+      <InventoryIcon texture="Overrided.png" sourcerect="0,69,32,41" />
+      <Sprite texture="Overrided.png" depth="0.54" sourcerect="0,69,32,41" origin="0.5,0.5" />
+    </Item>
+    <Item identifier="shotgun">
+      <inherit identifier="shotgun">
+      </inherit>
+      <InventoryIcon texture="Overrided.png" sourcerect="177,0,196,55" origin="0.5,0.5" />
+      <Sprite texture="Overrided.png" sourcerect="177,0,196,55" depth="0.55" origin="0.5,0.5" />
+    </Item>
+  </Override>
   <item name="" identifier="Wf_Admiral_Katana" scale="0.32" category="Equipment" tags="smallitem,weapon" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
@@ -201,199 +221,4 @@
     <Body width="20" height="32" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Override>
-    <Item name="" identifier="smg" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" />
-      <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
-      <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25" />
-      <PreferredContainer secondary="armcab,weaponholder" />
-      <Price baseprice="300">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="plastic" />
-      </Deconstruct>
-      <InventoryIcon texture="Overrided.png" sourcerect="0,0,177,69" origin="0.5,0.5" />
-      <Sprite texture="Overrided.png" sourcerect="0,0,177,69" depth="0.55" origin="0.5,0.5" />
-      <Body width="170" height="50" density="50" />
-      <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="50,0" handle1="-39,-5" handle2="19.5,7.5" holdangle="-35" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon reload="0.1" holdtrigger="true" barrelpos="87.5,9" spread="5" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
-        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-        <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
-        <StatusEffect type="OnUse">
-          <Explosion range="150.0" force="0.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="1.0" />
-        </StatusEffect>
-        <!--"Use" contained magazine to spawn projectiles.-->
-        <StatusEffect type="OnUse" target="Contained">
-          <Use />
-        </StatusEffect>
-        <RequiredItems items="smgammo" type="Contained" msg="ItemMsgAmmoRequired" />
-        <RequiredSkill identifier="weapons" level="50" />
-      </RangedWeapon>
-      <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
-        <Containable items="smgammo" />
-      </ItemContainer>
-      <LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
-        <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
-          <Conditional IsDead="false" />
-        </StatusEffect>
-        <LightTexture texture="Content/Lights/lightcone.png" origin="-0.022, 0.5" size="1.0,0.9" />
-      </LightComponent>
-      <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
-        <GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI" />
-        <TickBox text="Flash">
-          <StatusEffect type="OnUse" targettype="This" IsOn="true" />
-          <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
-        </TickBox>
-      </CustomInterface>
-      <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
-      <Quality>
-        <QualityStat stattype="FirepowerMultiplier" value="0.1" />
-      </Quality>
-      <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="smgmagazine" maxstacksize="2" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="smg,smgunique" amount="1" spawnprobability="1" />
-      <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" />
-      <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-      <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-      <PreferredContainer secondary="secarmcab" />
-      <Price baseprice="100" displaynonempty="true">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="magnesium" />
-        <RequiredItem identifier="lead" />
-        <RequiredItem identifier="steel" />
-      </Fabricate>
-      <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true" displayname="recycleitem">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="magnesium" />
-        <RequiredItem identifier="lead" />
-        <RequiredItem identifier="smgmagazine" mincondition="0.0" usecondition="false" />
-      </Fabricate>
-      <Deconstruct time="10">
-        <Item identifier="lead" mincondition="0.95" />
-        <Item identifier="steel" />
-      </Deconstruct>
-      <InventoryIcon texture="Overrided.png" sourcerect="0,69,32,41" />
-      <Sprite texture="Overrided.png" depth="0.54" sourcerect="0,69,32,41" origin="0.5,0.5" />
-      <Body width="30" height="40" density="50" />
-      <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-        <Containable items="smground" />
-        <!--Spawn an SMG round on use. Condition -3.125 -> 32 shots per magazine.-->
-        <StatusEffect type="OnUse" target="This" condition="-3.125" disabledeltatime="true">
-          <SpawnItem identifiers="smground" spawnposition="ThisInventory" />
-        </StatusEffect>
-      </ItemContainer>
-      <!--Magazines can be combined to raise condition.-->
-      <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-    </Item>
-    <Item name="" identifier="shotgun" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" />
-      <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
-      <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.2" />
-      <PreferredContainer secondary="wreckweaponholder" amount="1" spawnprobability="0.03" />
-      <PreferredContainer secondary="armcab" />
-      <Price baseprice="500">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="titaniumaluminiumalloy" />
-      </Deconstruct>
-      <InventoryIcon texture="Overrided.png" sourcerect="177,0,196,55" origin="0.5,0.5" />
-      <Sprite texture="Overrided.png" sourcerect="177,0,196,55" depth="0.55" origin="0.5,0.5" />
-      <Body width="200" height="30" density="50" />
-      <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="58,-10" aimpos="58,0" handle1="-43,-12.5" handle2="50,5" holdangle="-40" msg="ItemMsgPickUpSelect" />
-      <RangedWeapon barrelpos="98,15.9" spread="1" unskilledspread="10" combatPriority="80" reload="1.5" drawhudwhenequipped="true" crosshairscale="0.2">
-        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-        <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
-        <StatusEffect type="OnUse">
-          <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
-        </StatusEffect>
-        <!-- Cocking sound, delayed by 1.0 seconds. -->
-        <StatusEffect type="OnUse" delay="1.0">
-          <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-          <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
-          <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
-        </StatusEffect>
-        <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
-        <RequiredSkill identifier="weapons" level="60" />
-      </RangedWeapon>
-      <LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
-        <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
-          <Conditional IsDead="false" />
-        </StatusEffect>
-        <LightTexture texture="Content/Lights/lightcone.png" origin="-0.022, 0.5" size="1.0,0.9" />
-      </LightComponent>
-      <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
-        <GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI" />
-        <TickBox text="Flash">
-          <StatusEffect type="OnUse" targettype="This" IsOn="true" />
-          <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
-        </TickBox>
-      </CustomInterface>
-      <ItemContainer capacity="1" maxstacksize="6" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
-        <Containable items="shotgunammo" />
-      </ItemContainer>
-      <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
-      <Quality>
-        <QualityStat stattype="FirepowerMultiplier" value="0.1" />
-      </Quality>
-      <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="smground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
-      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-      <Body width="40" height="14" density="40" />
-      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-      <Projectile characterusable="false" hitscan="true" removeonhit="true">
-        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-        <Attack structuredamage="5" targetforce="5" itemdamage="10" severlimbsprobability="0.1">
-          <Affliction identifier="bleeding" strength="12.5" />
-          <Affliction identifier="gunshotwound" strength="12" />
-          <Affliction identifier="stun" strength="0.15" />
-        </Attack>
-        <StatusEffect type="OnImpact" target="UseTarget">
-          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-        </StatusEffect>
-        <StatusEffect type="OnImpact" target="UseTarget">
-          <Conditional entitytype="eq Structure" />
-          <Conditional hastag="eq door" />
-          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-        </StatusEffect>
-      </Projectile>
-      <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-  </Override>
 </Items>
