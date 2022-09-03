@@ -66,18 +66,20 @@
         <replace sel="./Sprite/@origin">
           0.5165,0.5
         </replace>
-        <replace sel="./Wearable/sprite[@limb='head']/@texture">
+        <replace sel="./Wearable/sprite[@limb='Head']/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb='head']/@sourcerect">
+        <replace sel="./Wearable/sprite[@limb='Head']/@sourcerect">
           4,213,92,88
         </replace>
-        <replace sel="./Wearable/sprite[@limb='head']/@origin">
+        <replace sel="./Wearable/sprite[@limb='Head']/@origin">
           0.5165,0.6001
         </replace>
-        <replace sel="./Wearable/sprite[@limb='head']/@scale">
+        <replace sel="./Wearable/sprite[@limb='Head']/@scale">
           0.7
         </replace>
+        <!-- Show hair -->
+        <del sel="./Wearable/sprite[@limb='Head']/@hidewearablesoftype"/>
         <add sel="./Wearable">
           <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
           <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="true" overlaycolor="176,0,0,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false">
@@ -108,19 +110,22 @@
         <replace sel="./Sprite/@origin">
           0.5105,0.4
         </replace>
-        <replace sel="./Wearable/sprite[@limb='head']/@texture">
+        <replace sel="./Wearable/sprite[@limb='Head']/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb='head']/@sourcerect">
+        <replace sel="./Wearable/sprite[@limb='Head']/@sourcerect">
           110,207,104,107
         </replace>
-        <replace sel="./Wearable/sprite[@limb='head']/@origin">
+        <replace sel="./Wearable/sprite[@limb='Head']/@origin">
           0.5105,0.523
         </replace>
-        <replace sel="./Wearable/sprite[@limb='head']/@scale">
+        <replace sel="./Wearable/sprite[@limb='Head']/@scale">
           0.7
         </replace>
+        <!-- Show hair -->
+        <del sel="./Wearable/sprite[@limb='Head']/@hidewearablesoftype"/>
         <add sel="./Wearable">
+          <!--
           <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true">
             <RequiredItem items="Wf_Armorlining" type="Contained" />
           </damagemodifier>
@@ -133,6 +138,7 @@
           <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true">
             <RequiredItem items="Wf_Armorlining" type="Contained" />
           </damagemodifier>
+        -->
           <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
           <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="true" overlaycolor="176,0,0,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false">
             <RequiredItem items="thermalgoggles" type="Contained" />

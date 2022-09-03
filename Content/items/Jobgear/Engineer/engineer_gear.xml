@@ -7,7 +7,7 @@
         <replace sel="./Wearable/sprite/@texture">
           engineer_1.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb=RightThigh or @limb=LeftThigh]/@hidelimb">
+        <replace sel="./Wearable/sprite[@limb='RightThigh' or @limb='LeftThigh' or @limb='RightLeg' or @limb='LeftLeg']/@hidelimb">
           false
         </replace>
       </inherit>
