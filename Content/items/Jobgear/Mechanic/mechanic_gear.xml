@@ -46,6 +46,8 @@
         <replace sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@origin">
           0.5,1.192
         </replace>
+        <!-- Show hair -->
+        <del sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@hidewearablesoftype"/>
       </inherit>
     </Item>
   </Override>

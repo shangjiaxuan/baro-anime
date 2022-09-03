@@ -20,6 +20,8 @@
         <replace sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@origin">
           0.483,1.237
         </replace>
+        <!-- Show hair -->
+        <del sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@hidewearablesoftype"/>
       </inherit>
     </Item>
     <Item identifier="captainscap2">
@@ -40,6 +42,7 @@
         <replace sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@origin">
           0.483,1.237
         </replace>
+        <del sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@hidewearablesoftype"/>
       </inherit>
     </Item>
     <Item identifier="captainscap3">
@@ -60,6 +63,8 @@
         <replace sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@origin">
           0.58,1.1
         </replace>
+        <!-- Show hair -->
+        <del sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@hidewearablesoftype"/>
       </inherit>
     </Item>
     <!-- HATS END -->
@@ -71,7 +76,7 @@
         <replace sel="./Wearable/sprite/@texture">
           captain_1.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb=RightThigh or @limb=LeftThigh]/@hidelimb">
+        <replace sel="./Wearable/sprite[@limb='RightThigh' or @limb='LeftThigh']/@hidelimb">
           false
         </replace>
       </inherit>
@@ -82,7 +87,7 @@
         <replace sel="./Wearable/sprite/@texture">
           captain_2.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb=RightThigh or @limb=LeftThigh]/@hidelimb">
+        <replace sel="./Wearable/sprite[@limb='RightThigh' or @limb='LeftThigh']/@hidelimb">
           false
         </replace>
       </inherit>
@@ -93,7 +98,7 @@
         <replace sel="./Wearable/sprite/@texture">
           captain_3.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb=RightThigh or @limb=LeftThigh or @limb=RightHand or @limb=LeftHand]/@hidelimb">
+        <replace sel="./Wearable/sprite[@limb='RightThigh' or @limb='LeftThigh' or @limb='RightHand' or @limb='LeftHand']/@hidelimb">
           false
         </replace>
       </inherit>

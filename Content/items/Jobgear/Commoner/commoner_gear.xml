@@ -119,6 +119,12 @@
         <replace sel="./Wearable/sprite/@texture">
           VIP1.png
         </replace>
+        <replace sel="./Wearable/sprite/@hidelimb">
+          false
+        </replace>
+        <replace sel="./Wearable/sprite[@limb='RightLeg' or @limb='LeftLeg' or @limb='RightFoot' or @limb='LeftFoot']/@hidelimb">
+          true
+        </replace>
       </inherit>
     </Item>
     <Item identifier="vipclothes2">
@@ -127,6 +133,9 @@
         <replace sel="./Wearable/sprite/@texture">
           VIP2.png
         </replace>
+        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightThigh' or @limb='LeftThigh']/@hidelimb">
+          false
+        </replace>
       </inherit>
     </Item>
     <Item identifier="vipclothes3">
@@ -134,6 +143,9 @@
         <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           VIP3.png
+        </replace>
+        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightThigh' or @limb='LeftThigh']/@hidelimb">
+          false
         </replace>
       </inherit>
     </Item>

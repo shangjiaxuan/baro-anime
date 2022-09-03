@@ -24,6 +24,8 @@
         <replace sel="./Wearable/sprite[@limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
           true
         </replace>
+        <!-- it seems original witd removed clown's foot step sounds. I'll assume it's intentional -->
+        <del sel="./Wearable/sprite[@limb='LeftFoot' or @limb='RightFoot']/@sound"/>
       </inherit>
     </Item>
     <Item identifier="clownmaskunique">
