@@ -5,6 +5,7 @@
     <!-- UNIFORMS START-->
     <Item identifier="securityuniform1">
       <inherit identifier="securityuniform1">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           SecurityOfficer1.png
         </replace>
@@ -15,6 +16,7 @@
     </Item>
     <Item identifier="securityuniform2">
       <inherit identifier="securityuniform2">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           SecurityOfficer2.png
         </replace>
@@ -25,6 +27,7 @@
     </Item>
     <Item identifier="securityuniform3">
       <inherit identifier="securityuniform3">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           SecurityOfficer3.png
         </replace>
@@ -36,6 +39,7 @@
     <!-- UNIFORMS END -->
     <Item identifier="bodyarmor">
       <inherit identifier="bodyarmor">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png
         </replace>
@@ -53,6 +57,7 @@
     <!-- HEADGEAR START -->
     <Item identifier="ballistichelmet1">
       <inherit identifier="ballistichelmet1">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
@@ -94,6 +99,7 @@
     </Item>
     <Item identifier="ballistichelmet2">
       <inherit identifier="ballistichelmet2">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
@@ -148,6 +154,7 @@
     <!-- HEADGEAR END -->
     <Item identifier="handcuffs">
       <inherit identifier="handcuffs">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png
         </replace>

@@ -2,6 +2,7 @@
 <Override>
   <Item identifier="headset">
     <inherit identifier="headset">
+      <doinherit/>
       <replace sel="./Sprite/@texture">
         %ModDir%/Content/Items/Jobgear/headgears.png
       </replace>

@@ -4,6 +4,7 @@
     <!-- UNIFORMS START-->
     <Item identifier="bluejumpsuit1">
       <inherit identifier="bluejumpsuit1">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           mechanic_1.png
         </replace>
@@ -14,6 +15,7 @@
     </Item>
     <Item identifier="bluejumpsuit2">
       <inherit identifier="bluejumpsuit2">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           mechanic_2.png
         </replace>
@@ -25,6 +27,7 @@
     <!-- UNIFORMS END -->
     <Item identifier="baseballcap">
       <inherit identifier="baseballcap">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>

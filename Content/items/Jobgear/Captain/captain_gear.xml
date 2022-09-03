@@ -4,6 +4,7 @@
     <!-- HATS START -->
     <Item identifier="captainscap1">
       <inherit identifier="captainscap1">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
@@ -23,6 +24,7 @@
     </Item>
     <Item identifier="captainscap2">
       <inherit identifier="captainscap2">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
@@ -42,6 +44,7 @@
     </Item>
     <Item identifier="captainscap3">
       <inherit identifier="captainscap3">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
@@ -64,6 +67,7 @@
     <!-- UNIFORMS START -->
     <Item identifier="captainsuniform1">
       <inherit identifier="captainsuniform1">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           captain_1.png
         </replace>
@@ -74,6 +78,7 @@
     </Item>
     <Item identifier="captainsuniform2">
       <inherit identifier="captainsuniform2">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           captain_2.png
         </replace>
@@ -84,6 +89,7 @@
     </Item>
     <Item identifier="captainsuniform3">
       <inherit identifier="captainsuniform3">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           captain_3.png
         </replace>

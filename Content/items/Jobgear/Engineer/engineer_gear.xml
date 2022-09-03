@@ -3,6 +3,7 @@
   <Override>
     <Item identifier="orangejumpsuit1">
       <inherit identifier="orangejumpsuit1">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           engineer_1.png
         </replace>
@@ -10,6 +11,7 @@
     </Item>
     <Item identifier="orangejumpsuit2">
       <inherit identifier="orangejumpsuit2">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           engineer_2.png
         </replace>

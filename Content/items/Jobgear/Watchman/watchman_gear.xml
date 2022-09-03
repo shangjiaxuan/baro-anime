@@ -3,6 +3,7 @@
   <Override>
     <Item identifier="watchmanclothes">
       <inherit identifier="watchmanclothes">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           watchman.png
         </replace>

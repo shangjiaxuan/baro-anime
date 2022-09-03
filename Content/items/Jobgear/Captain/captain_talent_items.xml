@@ -3,6 +3,7 @@
   <Override>
     <Item identifier="handcannonround">
       <inherit identifier="handcannonround">
+        <doinherit/>
         <replace sel="./InventoryIcon/@texture">
           %ModDir%/Content/Items/JobGear/TalentGear.png
         </replace>
@@ -13,6 +14,7 @@
     </Item>
     <Item identifier="handcannon">
       <inherit identifier="handcannon">
+        <doinherit/>
         <replace sel="./InventoryIcon/@texture">
           %ModDir%/Content/Items/JobGear/TalentGear.png
         </replace>
@@ -23,6 +25,7 @@
     </Item>
     <Item identifier="coalitioncommendation">
       <inherit identifier="coalitioncommendation">
+        <doinherit/>
         <replace sel="./InventoryIcon/@texture">
           %ModDir%/Content/Items/JobGear/TalentGear.png
         </replace>
@@ -33,6 +36,7 @@
     </Item>
     <Item identifier="coalitionmedal">
       <inherit identifier="coalitionmedal">
+        <doinherit/>
         <replace sel="./InventoryIcon/@texture">
           %ModDir%/Content/Items/JobGear/TalentGear.png
         </replace>
@@ -43,6 +47,7 @@
     </Item>
     <Item identifier="cigar">
       <inherit identifier="cigar">
+        <doinherit/>
         <replace sel="./InventoryIcon/@texture">
           %ModDir%/Content/Items/JobGear/TalentGear.png
         </replace>

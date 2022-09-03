@@ -3,6 +3,7 @@
   <Override>
     <Item identifier="slipsuit">
       <inherit identifier="slipsuit">
+        <doinherit/>
         <!-- item sprite on ground -->
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/Security/Slipsuit_Items.png

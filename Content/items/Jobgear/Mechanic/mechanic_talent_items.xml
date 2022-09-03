@@ -3,6 +3,7 @@
   <Override>
     <Item identifier="safetyharness">
       <inherit identifier="safetyharness">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           safetyharness.png
         </replace>

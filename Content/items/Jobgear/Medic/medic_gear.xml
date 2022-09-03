@@ -3,6 +3,7 @@
   <Override>
     <Item identifier="healthscanner">
       <inherit identifier="healthscanner">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
@@ -22,6 +23,7 @@
     </Item>
     <Item identifier="doctorsuniform1">
       <inherit identifier="doctorsuniform1">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           Medic1.png
         </replace>
@@ -32,6 +34,7 @@
     </Item>
     <Item identifier="doctorsuniform2">
       <inherit identifier="doctorsuniform2">
+        <doinherit/>
         <replace sel="./Wearable/sprite/@texture">
           Medic2.png
         </replace>

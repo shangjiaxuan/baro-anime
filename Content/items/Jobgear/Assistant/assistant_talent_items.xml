@@ -3,6 +3,7 @@
   <Override>
     <Item identifier="clowndivingmask">
       <inherit identifier="clowndivingmask">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/JobGear/TalentGear.png
         </replace>

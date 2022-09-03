@@ -2,6 +2,7 @@
 <Override>
   <Item identifier="assistantclothes">
     <inherit identifier="assistantclothes">
+      <doinherit/>
       <replace sel="./Wearable/sprite/@texture">
         Assistant.png
       </replace>

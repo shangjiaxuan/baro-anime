@@ -3,6 +3,7 @@
   <Override>
     <Item identifier="genesplicer">
       <inherit identifier="genesplicer">
+        <doinherit/>
         <replace sel="./InventoryIcon/@texture">
           %ModDir%/Content/Items/Genetic/Genetic.png
         </replace>

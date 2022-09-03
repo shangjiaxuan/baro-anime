@@ -3,6 +3,7 @@
   <Items>
     <Item identifier="divingmask">
       <inherit identifier="divingmask">
+        <doinherit/>
         <replace sel="./Wearable[@limbtype='Head']/sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
@@ -16,6 +17,7 @@
     </Item>
     <Item identifier="divingsuit">
       <inherit identifier="divingsuit">
+        <doinherit/>
         <!-- item sprite on ground -->
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Diving/DivingSuit_Item.png
@@ -49,6 +51,7 @@
     </Item>
     <Item identifier="underwaterscooter">
       <inherit identifier="underwaterscooter">
+        <doinherit/>
         <replace sel="./Sprite/@texture">
           Scooter.png
         </replace>
@@ -59,6 +62,7 @@
     </Item>
     <Item identifier="abyssdivingsuit">
       <inherit identifier="abyssdivingsuit">
+        <doinherit/>
         <!-- item sprite on ground -->
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Diving/Abyss_DivingSuit_Items.png
@@ -90,9 +94,9 @@
         </add>
       </inherit>
     </Item>
-
     <Item identifier="combatdivingsuit">
       <inherit identifier="combatdivingsuit">
+        <doinherit/>
         <!-- item sprite on ground -->
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Diving/Combat_DivingSuit_Items.png
