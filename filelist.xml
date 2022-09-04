@@ -159,7 +159,6 @@
   <Other file="%ModDir%/Content/items/Jobgear/Engineer/Wf_PUCS_D.png" />
   <Other file="%ModDir%/Content/items/Jobgear/Engineer/Wf_Pucs_D_icon.png" />
   <Other file="%ModDir%/Content/items/Jobgear/Engineer/Wf_PUCS_D_Items.png" />
-  <Other file="%ModDir%/Content/Characters/Humanhusk/Ragdolls/HumanHuskDefaultRagdoll.xml" />
   <Other file="%ModDir%/Content/items/Weapons/Overrided.png" />
   <Other file="%ModDir%/Content/Particles/ParticleAtlas2.png" />
   <NPCSets file="%ModDir%/Content/Map/Outposts/OutpostGenerationNpcs.xml" />

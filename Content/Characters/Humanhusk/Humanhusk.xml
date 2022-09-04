@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
-  <Character speciesname="Humanhusk" displayname="" husk="True" humanoid="True" caninteract="True" hasinfo="True" usehuskappendage="True" needsair="False" specifiertags="true" canspeak="False" blooddecal="blood" group="husk" speciestranslationoverride="" needswater="False" noise="100" visibility="100" bleedparticleair="blooddrop" bleedparticlewater="waterblood" bleedparticlemultiplier="1" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" hideinthermalgoggles="True" sonardisruption="0" disabledistance="25000">
-    <inherit identifier="Humanhusk" package="Vanilla"/>
-    <ragdolls folder="default" />
-    <animations folder="default" />
+  <Character speciesname="Humanhusk">
+    <inherit identifier="Humanhusk">
+      <!-- Vanilla have a back door that lets husked species use non-husked species ragdoll. -->
+      <!-- original edit was a patch for witd to override improved husk's separate ragdoll. -->
+      <replace sel="./@usehuskappendage">true</replace>
+    </inherit>
   </Character>
 </Override>
