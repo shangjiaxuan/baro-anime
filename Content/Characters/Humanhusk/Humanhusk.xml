@@ -2,6 +2,7 @@
 <Override>
   <Character speciesname="Humanhusk">
     <inherit identifier="Humanhusk">
+      <doinherit/>
       <!-- Vanilla have a back door that lets husked species use non-husked species ragdoll. -->
       <!-- original edit was a patch for witd to override improved husk's separate ragdoll. -->
       <replace sel="./@usehuskappendage">true</replace>
