@@ -4,6 +4,9 @@
     <Item identifier="healthscanner">
       <inherit identifier="healthscanner">
         <doinherit/>
+        <replace sel="./@tags">
+          smallitem,clothing,Wf_helmet_module
+        </replace>
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
