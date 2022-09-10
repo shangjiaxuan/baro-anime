@@ -57,6 +57,18 @@
         <replace sel="./Wearable/sprite[@limb='Torso' or @limb='RightHand' or @limb='LeftHand' or @limb='RightArm' or @limb='LeftArm' or @limb='RightForearm' or @limb='LeftForearm']/@hidelimb">
           false
         </replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@inheritorigin">
+          false
+        </replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@inheritsourcerect">
+          false
+        </replace>
+        <add sel="./Wearable/sprite[@limb='Torso']/@sourcerect">
+          160,0,112,192
+        </add>
+        <add sel="./Wearable/sprite[@limb='Torso']/@origin">
+          0.6405527,0.5
+        </add>
       </inherit>
     </Item>
   </Override>
