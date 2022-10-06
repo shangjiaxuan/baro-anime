@@ -57,8 +57,8 @@
       </Attack>
     </MeleeWeapon>
     <Quality>
-      <QualityStat stattype="AttackSpeedMultiplier" value="0.1" />
-      <QualityStat stattype="AttackMultiplier" value="0.1" />
+      <QualityStat stattype="StrikingSpeedMultiplier" value="0.1" />
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
     </Quality>
   </item>
   <item name="" identifier="Wf_Admiral_Wakizashi" scale="0.32" category="Equipment" tags="smallitem,weapon" cargocontainnerientifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
@@ -95,8 +95,8 @@
       </Attack>
     </MeleeWeapon>
     <Quality>
-      <QualityStat stattype="AttackSpeedMultiplier" value="0.1" />
-      <QualityStat stattype="AttackMultiplier" value="0.1" />
+      <QualityStat stattype="StrikingSpeedMultiplier" value="0.1" />
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
     </Quality>
   </item>
   <Item name="" identifier="Wf_Blame_harpoongun" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
