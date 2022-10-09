@@ -10,6 +10,32 @@
   <entitydescription.Wf_Blame_spear>The legendary electricity fisher's weapon，extremely hard</entitydescription.Wf_Blame_spear>
   <entityname.Wf_Blame_batterycell>Battery for the electricity based harpoon launcher</entityname.Wf_Blame_batterycell>
   <entitydescription.Wf_Blame_batterycell>The battery of the electricity based harpoon launcher, not compatible with our appliances and chargers. </entitydescription.Wf_Blame_batterycell>
+  <entityname.Wf_Blame_G.B.E>G.B.E</entityname.Wf_Blame_G.B.E>
+  <entitydescription.Wf_Blame_G.B.E>Graviton Beam Emitter: An extremely rare unknown weapon found in the deep sea. Its shape is similar to a pistol. It can emit different power of graviton beam according to the residual electricity and generate a gravity explosion attracting surrounding objects at the end of the beam.The beam emitted under any electric quantity has unparalleled power, so it should be used with caution</entitydescription.Wf_Blame_G.B.E>
+  <entityname.Wf_G.B.E_batterycell>G.B.E energy unit</entityname.Wf_G.B.E_batterycell>
+  <entitydescription.Wf_G.B.E_batterycell>G.B.E energy unit</entitydescription.Wf_G.B.E_batterycell>
+  <entityname.Wf_G.B.E_kai>MicroGraviton Beam Pistol</entityname.Wf_G.B.E_kai>
+  <entitydescription.Wf_G.B.E_kai>Coalition attempts to transform the G.B.E into universal weapon, which greatly reduces its power, but is compatible with Europa's universal charging devic</entitydescription.Wf_G.B.E_kai>
+  <entityname.Wf_G.B.E_kai_beam>MicroGraviton Beam</entityname.Wf_G.B.E_kai_beam>
+  <entitydescription.Wf_G.B.E_kai_beam>MicroGraviton Beam</entitydescription.Wf_G.B.E_kai_beam>
+  <entityname.Wf_G.B.E_beam_s>Small Graviton Beam</entityname.Wf_G.B.E_beam_s>
+  <entitydescription.Wf_G.B.E_beam_s>Small Graviton Beam</entitydescription.Wf_G.B.E_beam_s>
+  <entityname.Wf_G.B.E_beam_m>Graviton Beam</entityname.Wf_G.B.E_beam_m>
+  <entitydescription.Wf_G.B.E_beam_m>Graviton Beam</entitydescription.Wf_G.B.E_beam_m>
+  <entityname.Wf_G.B.E_beam_b>Huge Graviton Beam</entityname.Wf_G.B.E_beam_b>
+  <entitydescription.Wf_G.B.E_beam_b>Huge Graviton Beam</entitydescription.Wf_G.B.E_beam_b>
+  <entityname.Wf_New_XDS-01>XDS-01 diving suit</entityname.Wf_New_XDS-01>
+  <entitydescription.Wf_New_XDS-01>An experimental diving suit made of unidentified cyborg body found in the deep sea. It has better performance than any diving suit circulating on Europa</entitydescription.Wf_New_XDS-01>
+  <entityname.Wf_New_XDS-01_Engine>XDS-01 diving suit components</entityname.Wf_New_XDS-01_Engine>
+  <entitydescription.Wf_New_XDS-01_Engine>An experimental diving suit components made of unidentified cyborg body found in the deep sea, divers' swimming speed can be greatly increased after being powering on. The principle is unknown</entitydescription.Wf_New_XDS-01_Engine>
+  <entityname.Wf_debris>unidentified cyborg body</entityname.Wf_debris>
+  <entitydescription.Wf_debris>An unidentified cyborg body found in the deep sea，The appearance is similar to women. Maybe we can transform it into a diving suit</entitydescription.Wf_debris>
+  <entityname.Wf_Research_Box>Safe deposit box</entityname.Wf_Research_Box>
+  <entitydescription.Wf_Research_Box>A safe deposit box found in the deep sea，You can vaguely see the sign of the coalition in an inconspicuous place</entitydescription.Wf_Research_Box>
+  <entityname.Wf_Research_chip>XDS-01 design drawing separation chip</entityname.Wf_Research_chip>
+  <entitydescription.Wf_Research_chip>A XDS-01 design drawing separation chip found in coalition's safe deposit box, it's designed to destroy the readed data after reading</entitydescription.Wf_Research_chip>
+  <entityname.Wf_Research_Log>XDS-01 research log</entityname.Wf_Research_Log>
+  <entitydescription.Wf_Research_Log>A XDS-01 research log found in coalition's safe deposit box，the content is damaged and cannot be read, but the coalition may buy it at a high price</entitydescription.Wf_Research_Log>
   <!--
   <entityname.Wf_Armorlining>Armor lining</entityname.Wf_Armorlining>
   <entitydescription.Wf_Armorlining>An armor lining can be mounted inside the helmet,which can improve the defense of the helmet</entitydescription.Wf_Armorlining>

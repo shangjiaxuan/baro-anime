@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Waifu in the Deep v0.5a" modversion="0.5a" corepackage="False" steamworkshopid="2655395672" gameversion="0.18.15.0" expectedhash="92D8FB791B5F3AB6B8348BFDEF82549C">
+<contentpackage name="Waifu in the Deep v0.5a" steamworkshopid="2655395672" corepackage="false" modversion="0.5a" gameversion="0.19.10.0" installtime="1665014806" expectedhash="50C10D7BEC6149349E15A442D80B5283">
   <Item file="%ModDir%/Content/Map/Pirates/PirateItems.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/misc.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/Assistant/assistant_talent_items.xml" />
@@ -163,4 +163,12 @@
   <Other file="%ModDir%/Content/items/Weapons/Overrided.png" />
   <Other file="%ModDir%/Content/Particles/ParticleAtlas2.png" />
   <NPCSets file="%ModDir%/Content/Map/Outposts/OutpostGenerationNpcs.xml" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01.png" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Items.png" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Lights.png" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Engine_Items.png" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_Materials.png" />
+  <Item file="%ModDir%/Content/items/New/Wf_New_divingsuit.xml" />
+  <Other file="%ModDir%/Content/Items/Weapons/G.B.E shooting.ogg" />
+  <Other file="%ModDir%/Content/Items/Weapons/G.B.E Charging.ogg" />
 </contentpackage>
