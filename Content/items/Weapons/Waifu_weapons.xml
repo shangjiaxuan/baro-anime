@@ -4,6 +4,25 @@
     <Item identifier="smg">
       <inherit identifier="smg">
         <doinherit/>
+        <replace sel="./Holdable/@holdpos">50,-10</replace>
+        <replace sel="./Holdable/@aimpos">50,0</replace>
+        <replace sel="./Holdable/@handle1">-39,-5</replace>
+        <replace sel="./Holdable/@handle2">19.5,7.5</replace>
+        <replace sel="./RangedWeapon/@barrelpos">87.5,9</replace>
+        <add sel=".">
+          <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+            <GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI" draggable="true"/>
+            <TickBox text="Flash">
+              <StatusEffect type="OnUse" targettype="This" IsOn="true" />
+              <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
+            </TickBox>
+          </CustomInterface>
+        </add>
+        <add sel="./Holdable">
+          <LightComponent LightColor="0.5,0.5,0.5,1.0" range="1000" IsOn="true">
+            <LightTexture texture="Content/Lights/lightcone.png" origin="-0.022, 0.5" size="1.0,0.9" />
+          </LightComponent>
+        </add>
       </inherit>
       <InventoryIcon texture="Overrided.png" sourcerect="0,0,177,69" origin="0.5,0.5" />
       <Sprite texture="Overrided.png" sourcerect="0,0,177,69" depth="0.55" origin="0.5,0.5" />
@@ -18,6 +37,25 @@
     <Item identifier="shotgun">
       <inherit identifier="shotgun">
         <doinherit/>
+        <replace sel="./Holdable/@holdpos">58,-10</replace>
+        <replace sel="./Holdable/@aimpos">58,0</replace>
+        <replace sel="./Holdable/@handle1">-43,-12.5</replace>
+        <replace sel="./Holdable/@handle2">50,5</replace>
+        <replace sel="./RangedWeapon/@barrelpos">98,15.9</replace>
+        <add sel=".">
+          <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+            <GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI"  draggable="true" />
+            <TickBox text="Flash">
+              <StatusEffect type="OnUse" targettype="This" IsOn="true" />
+              <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
+            </TickBox>
+          </CustomInterface>
+        </add>
+        <add sel="./Holdable">
+          <LightComponent LightColor="0.5,0.5,0.5,1.0" range="1000" IsOn="true">
+            <LightTexture texture="Content/Lights/lightcone.png" origin="-0.022, 0.5" size="1.0,0.9" />
+          </LightComponent>
+        </add>
       </inherit>
       <InventoryIcon texture="Overrided.png" sourcerect="177,0,196,55" origin="0.5,0.5" />
       <Sprite texture="Overrided.png" sourcerect="177,0,196,55" depth="0.55" origin="0.5,0.5" />
@@ -223,5 +261,285 @@
     <Sprite texture="%ModDir%/Content/Items/Weapons/Blame_harpoongun.png" sourcerect="0,55,38,57" depth="0.8" />
     <Body width="20" height="32" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="" identifier="Wf_Blame_G.B.E" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="armcab" />
+    <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="locker" />
+    <Price baseprice="20000">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="false" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" sold="false" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" amout="2" />
+      <Item identifier="alientrinket2" amout="4" />
+      <Item identifier="alientrinket1" amout="4" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/Content/items/Weapons/Blame_harpoongun.png" sourcerect="38,55,66,57" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="50" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,10" handle1="-20,-8" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="31,13.5" holdtrigger="true" maxchargetime="2.0" reload="0.25" spread="0" unskilledspread="10" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
+      <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      <ParticleEmitter particle="pulselasermist" particleamount="30" anglemin="-10" anglemax="10" scalemin="1" scalemax="1" distancemin="0" distancemax="250" velocitymin="0" velocitymax="100" />
+      <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,0,0,255" />
+      <ParticleEmitterCharge particle="chargepulselaser" particlespersecond="60" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/Content/Items/Weapons/G.B.E shooting.ogg" type="OnUse" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <ChargeSound file="%ModDir%/Content/Items/Weapons/G.B.E Charging.ogg" range="3000" />
+      <RequiredItems item="Wf_G.B.E_batterycell" type="Contained" condition="gt 0" msg="ItemMsgBatteryCellRequired" />
+    </RangedWeapon>
+    <ItemContainer hideitems="true" drawinventory="false" capacity="1" maxstacksize="1" containedstateindicatorstyle="battery">
+      <Containable items="Wf_G.B.E_batterycell" />
+    </ItemContainer>
+    <aitarget sightrange="0" soundrange="1500" fadeouttime="2" />
+  </Item>
+  <Item name="" identifier="Wf_G.B.E_beam_s" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" penetration="1.0">
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.0,0.5" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" scalemultiplier="0.5,0.5" />
+      <Attack structuredamage="1000" targetforce="5" itemdamage="100" severlimbsprobability="10">
+        <Affliction identifier="burn" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Affliction identifier="stun" strength="1.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="this" condition="-100" disabledeltatime="true" />
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="400" distancemax="500" velocitymin="-500" velocitymax="-900" particlespersecond="200" colormultiplier="255,180,255,255" />
+        <ParticleEmitter particle="gravityspherefx2" particlespersecond="1" />
+        <Explosion range="500.0" structuredamage="500" itemdamage="100" force="-100.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
+          <Affliction identifier="burn" strength="500" />
+          <Affliction identifier="explosiondamage" strength="500" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="Wf_G.B.E_beam_m" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2" penetration="1.0">
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.0,1.0" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" scalemultiplier="1.0,1.0" />
+      <Attack structuredamage="1000" targetforce="5" itemdamage="100" severlimbsprobability="10">
+        <Affliction identifier="burn" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Affliction identifier="stun" strength="1.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="this" condition="-50" disabledeltatime="true" />
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="400" distancemax="500" velocitymin="-500" velocitymax="-900" particlespersecond="200" colormultiplier="255,180,255,255" />
+        <ParticleEmitter particle="gravityspherefx2" particlespersecond="3" />
+        <Explosion range="500.0" structuredamage="500" itemdamage="100" force="-100.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
+          <Affliction identifier="burn" strength="500" />
+          <Affliction identifier="explosiondamage" strength="500" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="Wf_G.B.E_beam_b" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="10" penetration="1.0">
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.0,3.0" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+      <Attack structuredamage="5000" targetforce="5" itemdamage="500" severlimbsprobability="100">
+        <Affliction identifier="burn" strength="2500" />
+        <Affliction identifier="lacerations" strength="2500" />
+        <Affliction identifier="stun" strength="1.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="this" condition="-10" disabledeltatime="true" />
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="400" distancemax="500" velocitymin="-500" velocitymax="-900" particlespersecond="200" colormultiplier="255,180,255,255" />
+        <ParticleEmitter particle="gravityspherefx2" particlespersecond="5" />
+        <Explosion range="1500.0" structuredamage="1000" itemdamage="100" force="-100.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
+          <Affliction identifier="burn" strength="1500" />
+          <Affliction identifier="explosiondamage" strength="1500" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="Wf_G.B.E_batterycell" category="Equipment,Electrical" maxstacksize="6" tags="smallitem,GBE_mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <PreferredContainer primary="armcab" />
+    <PreferredContainer primary="Wf_Blame_G.B.E" spawnprobability="1" />
+    <Deconstruct time="10">
+      <Item identifier="fulgurium" amount="6" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Content/Items/Weapons/Blame_harpoongun.png" sourcerect="104,55,38,57" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/Blame_harpoongun.png" sourcerect="104,55,38,57" depth="0.8" />
+    <Body width="20" height="32" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="false" SpawnWithId="" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="battery" showcontainedstateindicator="false">
+      <Containable items="Wf_G.B.E_beam_s,Wf_G.B.E_beam_m,Wf_G.B.E_beam_b" />
+      <StatusEffect type="OnSpawn" target="this" targetitemcomponent="ItemContainer" SpawnWithId="Wf_G.B.E_beam_s" disabledeltatime="true">
+        <Conditional condition="lte 20" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="this" targetitemcomponent="ItemContainer" SpawnWithId="Wf_G.B.E_beam_m" disabledeltatime="true" comparison="and">
+        <Conditional condition="gt 20" />
+        <Conditional condition="lt 100" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="this" targetitemcomponent="ItemContainer" SpawnWithId="Wf_G.B.E_beam_b" disabledeltatime="true">
+        <Conditional condition="100" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="this" condition="-10.0" disabledeltatime="true">
+        <Conditional condition="lte 30" />
+        <SpawnItem identifiers="Wf_G.B.E_beam_s" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="this" condition="-20.0" disabledeltatime="true" comparison="and">
+        <Conditional condition="gt 30" />
+        <Conditional condition="lte 50" />
+        <SpawnItem identifiers="Wf_G.B.E_beam_m" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="this" condition="-50.0" disabledeltatime="true">
+        <Conditional condition="100" />
+        <SpawnItem identifiers="Wf_G.B.E_beam_m" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="this">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="Wf_G.B.E_kai" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,loadable" AllowSellingWhenBroken="true" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="armcab" />
+    <PreferredContainer secondary="locker" />
+    <Price baseprice="5000">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="false" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" sold="false" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredSkill identifier="mechanical" level="80" />
+      <Item identifier="steel" amout="2" />
+      <Item identifier="alientrinket1" amout="2" />
+      <Item identifier="alientrinket3" amout="2" />
+      <Item identifier="fpgacircuit" amout="1" />
+      <Item identifier="Wf_Blame_G.B.E" amout="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="steel" amout="2" />
+      <Item identifier="alientrinket1" amout="1" />
+      <Item identifier="alientrinket3" amout="2" />
+      <Item identifier="fpgacircuit" amout="1" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/Content/items/Weapons/Blame_harpoongun.png" sourcerect="142,55,66,57" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="50" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,10" handle1="-20,-8" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="31,13.5" holdtrigger="true" maxchargetime="0.75" reload="0.25" spread="0" unskilledspread="10" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
+      <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      <ParticleEmitter particle="pulselasermist" particleamount="30" anglemin="-10" anglemax="10" scalemin="1" scalemax="1" distancemin="0" distancemax="250" velocitymin="0" velocitymax="100" />
+      <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,0,0,255" />
+      <ParticleEmitterCharge particle="chargepulselaser" particlespersecond="60" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/Content/Items/Weapons/G.B.E shooting.ogg" type="OnUse" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="this" condition="-10" disabledeltatime="true">
+        <SpawnItem identifier="Wf_G.B.E_kai_beam" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <ChargeSound file="%ModDir%/Content/Items/Weapons/G.B.E Charging.ogg" range="3000" />
+    </RangedWeapon>
+    <ItemContainer hideitems="true" drawinventory="false" capacity="1" maxstacksize="1" SpawnWithId="Wf_G.B.E_kai_beam" containedstateindicatorstyle="battery">
+      <Containable items="Wf_G.B.E_kai_beam" />
+    </ItemContainer>
+    <aitarget sightrange="0" soundrange="1500" fadeouttime="2" />
+  </Item>
+  <Item name="" identifier="Wf_G.B.E_kai_beam" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" penetration="0.5">
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.0,0.5" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" scalemultiplier="0.5,0.5" />
+      <Attack structuredamage="50" targetforce="5" itemdamage="100" severlimbsprobability="0.8">
+        <Affliction identifier="burn" strength="80" />
+        <Affliction identifier="lacerations" strength="40" />
+        <Affliction identifier="stun" strength="1.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="this" condition="-100" disabledeltatime="true" />
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="gravityspherefx" particlespersecond="1" />
+        <Explosion range="100.0" structuredamage="50" itemdamage="100" force="-10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
+          <Affliction identifier="burn" strength="45" />
+          <Affliction identifier="explosiondamage" strength="15" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
   </Item>
 </Items>

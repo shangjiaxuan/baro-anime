@@ -6,8 +6,11 @@
       <replace sel="./Wearable/sprite/@texture">
         Assistant.png
       </replace>
-      <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightThigh' or @limb='LeftThigh']/@hidelimb">
+      <replace sel="./Wearable/sprite/@hidelimb">
         false
+      </replace>
+      <replace sel="./Wearable/sprite[@limb='LeftForearm' or @limb='RightForearm' or @limb='Waist' or @limb='RightLeg' or @limb='LeftLeg' or @limb='RightFoot' or @limb='LeftFoot']/@hidelimb">
+        true
       </replace>
     </inherit>
   </Item>

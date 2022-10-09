@@ -30,8 +30,11 @@
         <replace sel="./Wearable/sprite/@texture">
           Medic1.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightThigh' or @limb='LeftThigh' or @limb='RightLeg' or @limb='LeftLeg']/@hidelimb">
+        <replace sel="./Wearable/sprite/@hidelimb">
           false
+        </replace>
+        <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
+          true
         </replace>
       </inherit>
     </Item>
@@ -41,8 +44,11 @@
         <replace sel="./Wearable/sprite/@texture">
           Medic2.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightThigh' or @limb='LeftThigh' or @limb='RightLeg' or @limb='LeftLeg']/@hidelimb">
+        <replace sel="./Wearable/sprite/@hidelimb">
           false
+        </replace>
+        <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
+          true
         </replace>
       </inherit>
     </Item>

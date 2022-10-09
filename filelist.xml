@@ -162,4 +162,12 @@
   <Other file="%ModDir%/Content/items/Weapons/Overrided.png" />
   <Other file="%ModDir%/Content/Particles/ParticleAtlas2.png" />
   <NPCSets file="%ModDir%/Content/Map/Outposts/OutpostGenerationNpcs.xml" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01.png" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Items.png" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Lights.png" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Engine_Items.png" />
+  <Other file="%ModDir%/Content/items/New/Wf_New_Materials.png" />
+  <Item file="%ModDir%/Content/items/New/Wf_New_divingsuit.xml" />
+  <Other file="%ModDir%/Content/Items/Weapons/G.B.E shooting.ogg" />
+  <Other file="%ModDir%/Content/Items/Weapons/G.B.E Charging.ogg" />
 </contentpackage>

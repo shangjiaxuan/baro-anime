@@ -10,6 +10,32 @@
   <entitydescription.Wf_Blame_spear>传说中电基渔师的武器，硬度极高</entitydescription.Wf_Blame_spear>
   <entityname.Wf_Blame_batterycell>电基鱼叉发射器电池</entityname.Wf_Blame_batterycell>
   <entitydescription.Wf_Blame_batterycell>电基鱼叉发射器配套的电池，无法兼容我们的电器与充电器，仅供电基鱼叉发射器使用</entitydescription.Wf_Blame_batterycell>
+  <entityname.Wf_Blame_G.B.E>重力子放射线射出装置</entityname.Wf_Blame_G.B.E>
+  <entitydescription.Wf_Blame_G.B.E>重力子放射线射出装置(Graviton Beam Emitter)，深海中发现的一种极为罕见的不明武器，造型类似于手枪，根据剩余电量可以射出不同威力的重力子放射线，并在放射线末端产生一个吸引周围物体的重力爆炸。不论哪一种电量下发射出的重力子放射线都拥有无与伦比的威力，需谨慎使用</entitydescription.Wf_Blame_G.B.E>
+  <entityname.Wf_G.B.E_batterycell>G.B.E能量单元</entityname.Wf_G.B.E_batterycell>
+  <entitydescription.Wf_G.B.E_batterycell>重力子放射线射出装置的能量单元，无法兼容我们的电器与充电器，仅供重力子放射线射出装置使用</entitydescription.Wf_G.B.E_batterycell>
+  <entityname.Wf_G.B.E_kai>微量重力子放射线手枪</entityname.Wf_G.B.E_kai>
+  <entitydescription.Wf_G.B.E_kai>联盟尝试将重力子放射线射出装置改造为通用武器的产物，威力大大降低，但可以兼容木卫二通用充电装置</entitydescription.Wf_G.B.E_kai>
+  <entityname.Wf_G.B.E_kai_beam>微量重力子放射线</entityname.Wf_G.B.E_kai_beam>
+  <entitydescription.Wf_G.B.E_kai_beam>微量重力子放射线</entitydescription.Wf_G.B.E_kai_beam>
+  <entityname.Wf_G.B.E_beam_s>少量重力子</entityname.Wf_G.B.E_beam_s>
+  <entitydescription.Wf_G.B.E_beam_s>少量重力子</entitydescription.Wf_G.B.E_beam_s>
+  <entityname.Wf_G.B.E_beam_m>一些重力子</entityname.Wf_G.B.E_beam_m>
+  <entitydescription.Wf_G.B.E_beam_m>一些重力子</entitydescription.Wf_G.B.E_beam_m>
+  <entityname.Wf_G.B.E_beam_b>大量重力子</entityname.Wf_G.B.E_beam_b>
+  <entitydescription.Wf_G.B.E_beam_b>大量重力子</entitydescription.Wf_G.B.E_beam_b>
+  <entityname.Wf_New_XDS-01>XDS-01潜水服</entityname.Wf_New_XDS-01>
+  <entitydescription.Wf_New_XDS-01>用木卫二深海中发现的不明义体改造成的潜水服，其性能超过了任何木卫二上流通的潜水服</entitydescription.Wf_New_XDS-01>
+  <entityname.Wf_New_XDS-01_Engine>XDS-01潜水服配件</entityname.Wf_New_XDS-01_Engine>
+  <entitydescription.Wf_New_XDS-01_Engine>用木卫二深海中发现的不明义体改造成的潜水服配件，启用后可以大幅增加潜水员在水中的移动速度，原理不明</entitydescription.Wf_New_XDS-01_Engine>
+  <entityname.Wf_debris>不明义体残骸</entityname.Wf_debris>
+  <entitydescription.Wf_debris>深海中发现的不明义体，外观与人类女性拥有极高的相似度，也许我们可以将其改造为潜水服使用</entitydescription.Wf_debris>
+  <entityname.Wf_Research_Box>保险箱</entityname.Wf_Research_Box>
+  <entitydescription.Wf_Research_Box>深海中发现的保险箱，在不起眼的地方隐约能看到联盟的标记</entitydescription.Wf_Research_Box>
+  <entityname.Wf_Research_chip>XDS-01设计图分离芯片</entityname.Wf_Research_chip>
+  <entitydescription.Wf_Research_chip>联盟保险箱中发现XDS-01设计图的分离芯片，使用了读取后即销毁被读取部分数据的设计</entitydescription.Wf_Research_chip>
+  <entityname.Wf_Research_Log>XDS-01研究日志</entityname.Wf_Research_Log>
+  <entitydescription.Wf_Research_Log>联盟保险箱中发现XDS-01的研究日志，内容已损坏无法阅读，但联盟可能会高价回收它</entitydescription.Wf_Research_Log>
   <!--
   <entityname.Wf_Armorlining>装甲内衬</entityname.Wf_Armorlining>
   <entitydescription.Wf_Armorlining>可以安装在头盔内部的装甲内衬，能有效地提高头盔的防御力</entitydescription.Wf_Armorlining>
