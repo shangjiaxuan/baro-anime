@@ -157,10 +157,10 @@
       </ItemContainer>
     </Item>
     <Item name="" identifier="Wf_pucs" category="Equipment" tags="diving,deepdiving,divinggear_wearableindoors,provocative,Wf_diving" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false">
-      <Price baseprice="670">
+      <Price baseprice="3670">
         <Price locationtype="outpost" multiplier="1" sold="false" />
         <Price locationtype="city" multiplier="1" sold="false" />
-        <Price locationtype="research" multiplier="2.0" />
+        <Price locationtype="research" multiplier="2.0" maxavailable="1" />
         <Price locationtype="military" multiplier="1" sold="false" />
         <Price locationtype="mine" multiplier="1.1" sold="false" />
       </Price>
@@ -339,10 +339,10 @@
 	  -->
     </Item>
     <Item name="" identifier="Wf_pucs_R" category="Equipment" tags="diving,deepdiving,divinggear_wearableindoors,provocative,Wf_diving" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false">
-      <Price baseprice="670">
+      <Price baseprice="4670">
         <Price locationtype="outpost" multiplier="1" sold="false" />
         <Price locationtype="city" multiplier="1" sold="false" />
-        <Price locationtype="research" multiplier="2.0" />
+        <Price locationtype="research" multiplier="2.0" minavailable="0" maxavailable="1" />
         <Price locationtype="military" multiplier="1" sold="false" />
         <Price locationtype="mine" multiplier="1.1" sold="false" />
       </Price>
@@ -522,10 +522,10 @@
 	  -->
     </Item>
     <Item name="" identifier="Wf_pucs_B" category="Equipment" tags="diving,deepdiving,divinggear_wearableindoors,provocative,Wf_diving" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false">
-      <Price baseprice="750">
+      <Price baseprice="5750">
         <Price locationtype="outpost" multiplier="1" sold="false" />
         <Price locationtype="city" multiplier="1" sold="false" />
-        <Price locationtype="research" multiplier="2.0" />
+        <Price locationtype="research" multiplier="2.0" minavailable="0" maxavailable="1" />
         <Price locationtype="military" multiplier="1" sold="false" />
         <Price locationtype="mine" multiplier="1.1" sold="false" />
       </Price>
@@ -709,10 +709,10 @@
 	  -->
     </Item>
     <Item name="" identifier="Wf_pucs_D" category="Equipment" tags="diving,deepdiving,divinggear_wearableindoors,Wf_diving" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false">
-      <Price baseprice="1000">
+      <Price baseprice="6000">
         <Price locationtype="outpost" multiplier="1" sold="false" />
         <Price locationtype="city" multiplier="1" sold="false" />
-        <Price locationtype="research" multiplier="2.0" />
+        <Price locationtype="research" multiplier="2.0" minavailable="0" maxavailable="1" />
         <Price locationtype="military" multiplier="1" sold="false" />
         <Price locationtype="mine" multiplier="1.1" sold="false" />
       </Price>
@@ -935,6 +935,9 @@
         <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
         <RequiredItem identifier="fulgurium" amount="2" />
       </Fabricate>
+      <LightComponent range="200.0" lightcolor="250,224,165,255" IsOn="false" allowingameediting="false">
+        <LightTexture texture="%ModDir%/Content/Items/weapons/lights.png" origin="0.30053,0.38559" size="0.5,0.5" />
+      </LightComponent>
       <Sprite texture="%ModDir%/Content/Items/weapons/Overrided.png" sourcerect="0,110,226,72" depth="0.55" origin="0.5,0.5" />
       <BrokenSprite texture="%ModDir%/Content/Items/weapons/Overrided.png" sourcerect="0,182,226,72" depth="0.55" origin="0.5,0.5" maxcondition="90" />
       <BrokenSprite texture="%ModDir%/Content/Items/weapons/Overrided.png" sourcerect="0,254,226,72" depth="0.55" origin="0.5,0.5" maxcondition="80" />
@@ -946,14 +949,26 @@
         <StatusEffect type="Always" target="this" setvalue="true" condition="90">
           <RequiredItem item="fuelrod" type="Contained" />
         </StatusEffect>
+        <StatusEffect type="Always" target="this" targetitemcomponent="LightComponent" lightcolor="65,253,129,255">
+          <Conditional condition="90" />
+        </StatusEffect>
         <StatusEffect type="Always" target="this" setvalue="true" condition="80">
           <RequiredItem item="thoriumfuelrod" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="this" targetitemcomponent="LightComponent" lightcolor="255,255,255,255">
+          <Conditional condition="80" />
         </StatusEffect>
         <StatusEffect type="Always" target="this" setvalue="true" condition="70">
           <RequiredItem item="fulguriumfuelrod" type="Contained" />
         </StatusEffect>
+        <StatusEffect type="Always" target="this" targetitemcomponent="LightComponent" lightcolor="255,184,17,255">
+          <Conditional condition="70" />
+        </StatusEffect>
         <StatusEffect type="Always" target="this" setvalue="true" condition="60">
           <RequiredItem item="fulguriumfuelrodvolatile" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="this" targetitemcomponent="LightComponent" lightcolor="38,253,243,255">
+          <Conditional condition="60" />
         </StatusEffect>
       </Holdable>
       <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">

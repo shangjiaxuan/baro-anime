@@ -2,8 +2,12 @@
 <infotexts language="English" nowhitespace="false" translatedname="English">
   <entityname.Wf_Admiral_Katana>Katana</entityname.Wf_Admiral_Katana>
   <entitydescription.Wf_Admiral_Katana>A melee weapon of Eastern countries on earth, which is very easy to cause bloodshed</entitydescription.Wf_Admiral_Katana>
+  <entityname.Wf_Admiral_Katana_kai>Thermal Katana</entityname.Wf_Admiral_Katana_kai>
+  <entitydescription.Wf_Admiral_Katana_kai>Katana modernized by alien materials, It can cut almost any monster's armor. The high temperature blade will directly heal the wound, so it lose the ability to bleed enemy.</entitydescription.Wf_Admiral_Katana_kai>
   <entityname.Wf_Admiral_Wakizashi>Wakizashi</entityname.Wf_Admiral_Wakizashi>
   <entitydescription.Wf_Admiral_Wakizashi>A melee weapon of Eastern countries on earth, shorter than Katana</entitydescription.Wf_Admiral_Wakizashi>
+  <entityname.Wf_Admiral_Wakizashi_kai>Thermal Wakizashi</entityname.Wf_Admiral_Wakizashi_kai>
+  <entitydescription.Wf_Admiral_Wakizashi_kai>Wakizashi modernized by alien materials, It can cut almost any monster's armor. The high temperature blade will directly heal the wound, so it lose the ability to bleed enemy.</entitydescription.Wf_Admiral_Wakizashi_kai>
   <entityname.Wf_Blame_harpoongun>Electricity based harpoon launcher</entityname.Wf_Blame_harpoongun>
   <entitydescription.Wf_Blame_harpoongun>The unidentified man-made weapon brought back from the deep sea, the legendary electricity fisher's weapon, the harpoon launched through electromagnetic force has extremely high penetration, It seems to be compatible with the standard batteries we use.</entitydescription.Wf_Blame_harpoongun>
   <entityname.Wf_Blame_spear>Electricity based harpoon</entityname.Wf_Blame_spear>
