@@ -130,7 +130,7 @@
       </SubContainer>
     </ItemContainer>
   </Item>
-  <Item name="" identifier="Wf_New_XDS-01_Engine" category="Equipment" tags="diving,provocative" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_soft" isshootable="true" requireaimtouse="false">
+  <Item name="" identifier="Wf_New_XDS-01_Engine" category="Equipment" tags="diving,provocative" cargocontaineridentifier="metalcrate" HideConditionBar="true" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_soft" isshootable="true" requireaimtouse="false">
     <PreferredContainer primary="divingcab" />
     <Deconstruct time="10">
       <Item identifier="physicorium" />

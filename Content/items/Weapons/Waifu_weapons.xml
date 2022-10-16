@@ -77,13 +77,13 @@
       <Item identifier="physicorium" />
       <Item identifier="steel" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="236,54,74,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="240,54,70,54" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="0,0,310,54" depth="0.55" origin="0.5,0.5" />
     <Body width="305" height="32" density="45" />
     <MeleeWeapon slots="RightHand,Any" aimpos="45,20" handle1="-35,-2" holdangle="30" reload="0.95" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="3" severlimbsprobability="0.1" itemdamage="20" penetration="0.25">
-        <Affliction identifier="internaldamage" strength="10" />
-        <Affliction identifier="lacerations" strength="15" />
+        <Affliction identifier="internaldamage" strength="5" />
+        <Affliction identifier="lacerations" strength="12.5" />
         <Affliction identifier="bleeding" strength="25" />
         <Affliction identifier="stun" strength="0.5" />
         <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
@@ -98,6 +98,50 @@
       <QualityStat stattype="StrikingSpeedMultiplier" value="0.1" />
       <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
     </Quality>
+  </item>
+  <item name="" identifier="Wf_Admiral_Katana_kai" scale="0.32" category="Equipment" tags="smallitem,weapon" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+    <PreferredContainer primary="armcab" spawnprobability="0" />
+    <Price baseprice="1200" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" time="20">
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredSkill identifier="weapons" level="60" />
+      <Item identifier="Wf_Admiral_Katana" />
+      <Item identifier="physicorium" amount="2" />
+      <Item identifier="fulgurium" amount="4" />
+      <Item identifier="fpgacircuit" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="physicorium" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <LightComponent range="200.0" lightcolor="250,255,255,255" IsOn="true" allowingameediting="false">
+      <LightTexture texture="%ModDir%/Content/Items/weapons/light_katana.png" origin="0.354166666,0.495" size="0.21,0.21" />
+      <sprite texture="%ModDir%/Content/Items/weapons/lightsprite.png" sourcerect="228,3,23,24" origin="0.5,0.5" />
+    </LightComponent>
+    <InventoryIcon texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="240,172,70,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="0,108,310,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="305" height="32" density="45" />
+    <MeleeWeapon slots="RightHand,Any" aimpos="45,20" handle1="-35,-2" holdangle="30" reload="0.95" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="3" severlimbsprobability="2.5" itemdamage="30" penetration="0.75">
+        <Affliction identifier="internaldamage" strength="15" />
+        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="burn" strength="15" />
+        <Affliction identifier="stun" strength="0.5" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/weapons/lightsaber.ogg" range="500" type="OnUse" />
+      </Attack>
+    </MeleeWeapon>
   </item>
   <item name="" identifier="Wf_Admiral_Wakizashi" scale="0.32" category="Equipment" tags="smallitem,weapon" cargocontainnerientifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="0.1" />
@@ -116,12 +160,12 @@
       <Item identifier="steel" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="310,54,62,54" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="0,54,236,54" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="0,54,240,54" depth="0.55" origin="0.5,0.5" />
     <Body width="232" height="32" density="45" />
     <MeleeWeapon slots="LeftHand,Any" aimpos="45,20" handle1="-32,-2" holdangle="30" reload="0.95" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="3" severlimbsprobability="0.1" itemdamage="20" penetration="0.25">
         <Affliction identifier="internaldamage" strength="5" />
-        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="lacerations" strength="5" />
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="stun" strength="0.2" />
         <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
@@ -136,6 +180,49 @@
       <QualityStat stattype="StrikingSpeedMultiplier" value="0.1" />
       <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
     </Quality>
+  </item>
+  <item name="" identifier="Wf_Admiral_Wakizashi_kai" scale="0.32" category="Equipment" tags="smallitem,weapon" cargocontainnerientifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+    <PreferredContainer primary="armcab" spawnprobability="0" />
+    <Price baseprice="1200" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" time="15">
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredSkill identifier="weapons" level="60" />
+      <Item identifier="Wf_Admiral_Wakizashi" />
+      <Item identifier="physicorium" amount="1" />
+      <Item identifier="fulgurium" amount="2" />
+      <Item identifier="fpgacircuit" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="physicorium" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <LightComponent range="200.0" lightcolor="250,255,255,255" IsOn="true" allowingameediting="false">
+      <LightTexture texture="%ModDir%/Content/Items/weapons/light_Wakizashi.png" origin="0.2871345,0.525" size="0.19,0.19" />
+    </LightComponent>
+    <InventoryIcon texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="310,172,62,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/items/Weapons/Katana.png" sourcerect="0,172,240,62" depth="0.55" origin="0.5,0.5" />
+    <Body width="232" height="32" density="45" />
+    <MeleeWeapon slots="LeftHand,Any" aimpos="45,20" handle1="-32,-2" holdangle="30" reload="0.95" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="3" severlimbsprobability="0.1" itemdamage="20" penetration="0.75">
+        <Affliction identifier="internaldamage" strength="5" />
+        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="burn" strength="12" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/weapons/lightsaber.ogg" range="500" type="OnUse" />
+      </Attack>
+    </MeleeWeapon>
   </item>
   <Item name="" identifier="Wf_Blame_harpoongun" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="armcab" />
@@ -276,9 +363,9 @@
       <Price storeidentifier="merchantarmory" sold="false" multiplier="0.9" minavailable="3" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="steel" amout="2" />
-      <Item identifier="alientrinket2" amout="4" />
-      <Item identifier="alientrinket1" amout="4" />
+      <Item identifier="steel" amount="2" />
+      <Item identifier="alientrinket2" amount="4" />
+      <Item identifier="alientrinket1" amount="4" />
     </Deconstruct>
     <Sprite texture="%ModDir%/Content/items/Weapons/Blame_harpoongun.png" sourcerect="38,55,66,57" depth="0.55" origin="0.5,0.5" />
     <Body width="60" height="50" density="50" />
@@ -470,17 +557,17 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="electrical" level="80" />
       <RequiredSkill identifier="mechanical" level="80" />
-      <Item identifier="steel" amout="2" />
-      <Item identifier="alientrinket1" amout="2" />
-      <Item identifier="alientrinket3" amout="2" />
-      <Item identifier="fpgacircuit" amout="1" />
-      <Item identifier="Wf_Blame_G.B.E" amout="1" />
+      <Item identifier="steel" amount="2" />
+      <Item identifier="alientrinket1" amount="2" />
+      <Item identifier="alientrinket3" amount="2" />
+      <Item identifier="fpgacircuit" amount="1" />
+      <Item identifier="Wf_Blame_G.B.E" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
-      <Item identifier="steel" amout="2" />
-      <Item identifier="alientrinket1" amout="1" />
-      <Item identifier="alientrinket3" amout="2" />
-      <Item identifier="fpgacircuit" amout="1" />
+      <Item identifier="steel" amount="2" />
+      <Item identifier="alientrinket1" amount="1" />
+      <Item identifier="alientrinket3" amount="2" />
+      <Item identifier="fpgacircuit" amount="1" />
     </Deconstruct>
     <Sprite texture="%ModDir%/Content/items/Weapons/Blame_harpoongun.png" sourcerect="142,55,66,57" depth="0.55" origin="0.5,0.5" />
     <Body width="60" height="50" density="50" />
