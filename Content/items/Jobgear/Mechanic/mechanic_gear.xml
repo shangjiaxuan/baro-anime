@@ -5,6 +5,10 @@
     <Item identifier="bluejumpsuit1">
       <inherit identifier="bluejumpsuit1">
         <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Mechanic Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,198,128,99" origin="0.5,0.5" />
+        </add>
         <replace sel="./Wearable/sprite/@texture">
           mechanic_1.png
         </replace>
@@ -19,6 +23,10 @@
     <Item identifier="bluejumpsuit2">
       <inherit identifier="bluejumpsuit2">
         <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Mechanic Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,198,128,99" origin="0.5,0.5" />
+        </add>
         <replace sel="./Wearable/sprite/@texture">
           mechanic_2.png
         </replace>

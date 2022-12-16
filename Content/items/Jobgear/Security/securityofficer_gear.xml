@@ -5,6 +5,10 @@
     <Item identifier="securityuniform1">
       <inherit identifier="securityuniform1">
         <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Security Officer's Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="384,99,129,99" origin="0.5,0.5" />
+        </add>
         <replace sel="./Wearable/sprite/@texture">
           SecurityOfficer1.png
         </replace>
@@ -19,6 +23,10 @@
     <Item identifier="securityuniform2">
       <inherit identifier="securityuniform2">
         <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,297,128,99" origin="0.5,0.5" />
+        </add>
         <replace sel="./Wearable/sprite/@texture">
           SecurityOfficer2.png
         </replace>
@@ -33,6 +41,10 @@
     <Item identifier="securityuniform3">
       <inherit identifier="securityuniform3">
         <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Security Officer's Uniform 3 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,198,128,99" origin="0.5,0.5" />
+        </add>
         <replace sel="./Wearable/sprite/@texture">
           SecurityOfficer3.png
         </replace>

@@ -25,6 +25,12 @@
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/Engineer/PUCS_Items.png
         </replace>
+        <replace sel="./Sprite/@sourcerect">
+          0,0,160,120
+        </replace>
+        <replace sel="./Sprite/@origin">
+          0.4625,0.5
+        </replace>
         <!-- contained sprite, Vertical Locker -->
         <replace sel="./ContainedSprite[@allowedcontainertags='divingsuitcontainervertical']/@texture">
           %ModDir%/Content/Items/Jobgear/Engineer/PUCS_Items.png
@@ -191,6 +197,8 @@
         <sprite name="Wf pucs Right Shoe" texture="Wf_pucs.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />  
       </add>
       <del sel="./Wearable/StatusEffect/@LowPassMultiplier"/>
+      <del sel="./Wearable/StatusEffect/@PropulsionSpeedMultiplier"/>
+      <replace sel="./Wearable/StatusEffect/@SpeedMultiplier">0.9</replace>
     </inherit>
     <Price baseprice="3670">
       <Price locationtype="outpost" multiplier="1" sold="false" />
@@ -251,6 +259,8 @@
         <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_R.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_R.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       </add>
+      <add sel="./Wearable/StatusEffect/@PropulsionSpeedMultiplier">1.45</add>
+      <replace sel="./Wearable/StatusEffect/@SpeedMultiplier">1.05</replace>
       <del sel="./Wearable/damagemodifier"/>
       <add sel="./Wearable">
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bleeding" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -311,7 +321,8 @@
         <sprite name="Wf pucs Left Leg" texture="Wf_pucs_B.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_B.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_B.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        </add>
+      </add>
+      <replace sel="./Wearable/StatusEffect/@SpeedMultiplier">0.85</replace>
       <del sel="./Wearable/damagemodifier"/>
       <add sel="./Wearable">
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bleeding,blunttrauma,gunshotwound,bitewounds" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -376,7 +387,8 @@
         <sprite name="Wf pucs Left Leg" texture="Wf_pucs_D.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_D.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_D.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        </add>
+      </add>
+      <del sel="./Wearable/StatusEffect/@LowPassMultiplier"/>
       <del sel="./Wearable/damagemodifier"/>
       <add sel="./Wearable">
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding,bitewounds,blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />

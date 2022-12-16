@@ -4,6 +4,10 @@
     <Item identifier="slipsuit">
       <inherit identifier="slipsuit">
         <doinherit/>
+        <del sel="./Sprite"/>
+        <add sel=".">
+          <Sprite name="Slipsuit Item" texture="%ModDir%/Content/Items/Jobgear/Security/Slipsuit_Items.png" sourcerect="0,0,160,120" depth="0.55" origin="0.4625,0.5" />
+        </add>
         <!-- item sprite on ground -->
         <replace sel="./Sprite/@texture">
           %ModDir%/Content/Items/Jobgear/Security/Slipsuit_Items.png
@@ -39,6 +43,24 @@
           <Sound file="%ModDir%/Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true" />
         </add>
         -->
+      </inherit>
+    </Item>
+    <Item identifier="bandolier">
+      <inherit identifier="bandolier">
+        <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon texture="%ModDir%/Content/Items/JobGear/Security/SecurityVest.png" sourcerect="0,52,79,107" origin="0.45,0.5" />
+        </add>
+        <del sel="./Sprite"/>
+        <add sel=".">
+          <Sprite texture="%ModDir%/Content/Items/JobGear/Security/SecurityVest.png" sourcerect="0,52,79,107" depth="0.6" origin="0.5,0.5" />
+        </add>
+        <replace sel="./Wearable/@slots">OuterClothes,Bag</replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Security Vest" texture="%ModDir%/Content/Items/JobGear/Security/SecurityVest.png" limb="Torso" hidelimb="false" sourcerect="0,52,79,118" inherittexturescale="true" origin="0.45,0.520338" />
+        </add>
       </inherit>
     </Item>
   </Override>

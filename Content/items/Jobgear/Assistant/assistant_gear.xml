@@ -3,6 +3,10 @@
   <Item identifier="assistantclothes">
     <inherit identifier="assistantclothes">
       <doinherit/>
+      <replace sel="./InventoryIcon/@texture">
+        %ModDir%/Content/Items/Jobgear/OutfitIcons.png
+      </replace>
+      <replace sel="./InventoryIcon/@sourcerect">384,198,128,99</replace>
       <replace sel="./Wearable/sprite/@texture">
         Assistant.png
       </replace>

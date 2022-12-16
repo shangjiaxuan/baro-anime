@@ -27,29 +27,52 @@
     <Item identifier="doctorsuniform1">
       <inherit identifier="doctorsuniform1">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          Medic1.png
-        </replace>
-        <replace sel="./Wearable/sprite/@hidelimb">
-          false
-        </replace>
-        <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
-          true
-        </replace>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Medic Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,99,128,99" origin="0.5,0.5" />
+        </add>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Medic Uniform 1 Torso" texture="Medic1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,0,112,207" origin="0.49769565,0.463768" />
+          <sprite name="Medic Uniform 1 Right Hand" texture="Medic1.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Hand" texture="Medic1.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Lower Arm" texture="Medic1.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Lower Arm" texture="Medic1.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Upper Arm" texture="Medic1.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Upper Arm" texture="Medic1.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Waist" texture="Medic1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="160,207,112,61" />
+          <sprite name="Medic Uniform 1 Right Thigh" texture="Medic1.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Thigh" texture="Medic1.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Leg" texture="Medic1.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Leg" texture="Medic1.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Shoe" texture="Medic1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Shoe" texture="Medic1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        </add>
       </inherit>
     </Item>
     <Item identifier="doctorsuniform2">
       <inherit identifier="doctorsuniform2">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          Medic2.png
-        </replace>
-        <replace sel="./Wearable/sprite/@hidelimb">
-          false
-        </replace>
-        <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
-          true
-        </replace>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Medic Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,99,128,99" origin="0.5,0.5" />
+        </add>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Medic Uniform 2 Torso" texture="Medic2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,0,112,207" origin="0.49769565,0.463768" />
+          <sprite name="Medic Uniform 2 Right Hand" texture="Medic2.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Hand" texture="Medic2.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Lower Arm" texture="Medic2.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Lower Arm" texture="Medic2.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Upper Arm" texture="Medic2.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Upper Arm" texture="Medic2.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Waist" texture="Medic2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="160,207,112,61" />
+          <sprite name="Medic Uniform 2 Right Thigh" texture="Medic2.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Thigh" texture="Medic2.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Leg" texture="Medic2.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Leg" texture="Medic2.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Shoe" texture="Medic2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Shoe" texture="Medic2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />        </add>
       </inherit>
     </Item>
   </Override>
