@@ -13,7 +13,7 @@
         <Price locationtype="mine" multiplier="1" minavailable="1" />
       </Price>
       <Deconstruct time="10" />
-      <InventoryIcon name="Mechanic Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,274,127,110" origin="0.5,0.5" />
+      <InventoryIcon name="Mechanic Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,198,128,99" origin="0.5,0.5" />
       <Sprite name="Mechanic Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="513,9,117,55" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -46,7 +46,7 @@
         <Price locationtype="mine" multiplier="1" minavailable="1" />
       </Price>
       <Deconstruct time="10" />
-      <InventoryIcon name="Mechanic Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="129,274,128,110" origin="0.5,0.5" />
+      <InventoryIcon name="Mechanic Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,198,128,99" origin="0.5,0.5" />
       <Sprite name="Mechanic Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="637,7,121,56" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
