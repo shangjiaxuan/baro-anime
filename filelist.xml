@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Waifu in the Deep v0.5a" modversion="0.5a" corepackage="False" steamworkshopid="2655395672" gameversion="0.19.14.0" expectedhash="692E74D1A1857A4CF849011B59E312D1">
+<contentpackage name="Waifu in the Deep v0.5a" modversion="0.5a" corepackage="False" steamworkshopid="2655395672" gameversion="0.20.15.0" expectedhash="2E592373AE7BE51C4485B5632884C678">
   <Item file="%ModDir%/Content/Map/Pirates/PirateItems.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/misc.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/Assistant/assistant_talent_items.xml" />

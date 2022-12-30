@@ -205,8 +205,12 @@
       <Containable items="mobilebattery,Blame_mobilebattery" />
       <SlotIcon slotindex="0" texture="Content/UI/WeaponUI.png" sourcerect="64,961,32,22" origin="0.5,0.45" />
       <SlotIcon slotindex="1" texture="%ModDir%/Content/items/weapons/Waifu_UI.png" sourcerect="0,0,120,120" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       <SubContainer capacity="1" maxstacksize="2">
         <Containable items="Blame_harpoonammo" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="true" itempos="22,-1" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <!--<ItemContainer itempos="27,10" iteminterval="0,-4" hideitems="true" capacity="1" maxstacksize="2" containedstateindicatorstyle="spear" containedspritedepths="0.551,0.552">
@@ -321,6 +325,19 @@
     <ItemContainer hideitems="true" drawinventory="false" capacity="1" maxstacksize="1" containedstateindicatorstyle="battery">
       <Containable items="Wf_G.B.E_batterycell" />
     </ItemContainer>
+    <LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="0.5,0.5" size="1.0,0.9" />
+    </LightComponent>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI" />
+      <TickBox text="Flash">
+        <StatusEffect type="OnUse" targettype="This" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
+      </TickBox>
+    </CustomInterface>
     <aitarget sightrange="0" soundrange="1500" fadeouttime="2" />
   </Item>
   <Item name="" identifier="Wf_G.B.E_beam_s" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
@@ -522,6 +539,19 @@
     <ItemContainer hideitems="true" drawinventory="false" capacity="1" maxstacksize="1" SpawnWithId="Wf_G.B.E_kai_beam" containedstateindicatorstyle="battery">
       <Containable items="Wf_G.B.E_kai_beam" />
     </ItemContainer>
+    <LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="0.5, 0.5" size="1.0,0.9" />
+    </LightComponent>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI" />
+      <TickBox text="Flash">
+        <StatusEffect type="OnUse" targettype="This" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
+      </TickBox>
+    </CustomInterface>
     <aitarget sightrange="0" soundrange="1500" fadeouttime="2" />
   </Item>
   <Item name="" identifier="Wf_G.B.E_kai_beam" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
@@ -578,6 +608,11 @@
         <Item identifier="steel" />
         <Item identifier="plastic" />
       </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+        <RequiredSkill identifier="weapons" level="55" />
+        <RequiredItem identifier="plastic" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      </Fabricate>
       <InventoryIcon texture="Overrided.png" sourcerect="0,0,177,69" origin="0.5,0.5" />
       <Sprite texture="Overrided.png" sourcerect="0,0,177,69" depth="0.55" origin="0.5,0.5" />
       <Body width="170" height="50" density="50" />
@@ -602,22 +637,13 @@
         <RequiredItems items="smgammo" type="Contained" msg="ItemMsgAmmoRequired" />
         <RequiredSkill identifier="weapons" level="50" />
       </RangedWeapon>
-      <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
-        <Containable items="smgammo" />
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
+        <Containable items="smgammo" hide="true" />
+        <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+        <SubContainer capacity="1" maxstacksize="1" hideitems="false">
+          <Containable items="flashlight" hide="true" itempos="22,-1" setactive="true" />
+        </SubContainer>
       </ItemContainer>
-      <LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
-        <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
-          <Conditional IsDead="false" />
-        </StatusEffect>
-        <LightTexture texture="Content/Lights/lightcone.png" origin="-0.022, 0.5" size="1.0,0.9" />
-      </LightComponent>
-      <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
-        <GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI" />
-        <TickBox text="Flash">
-          <StatusEffect type="OnUse" targettype="This" IsOn="true" />
-          <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
-        </TickBox>
-      </CustomInterface>
       <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
       <Quality>
         <QualityStat stattype="FirepowerMultiplier" value="0.1" />
@@ -681,6 +707,12 @@
         <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
         <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
       </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+        <RequiredSkill identifier="weapons" level="55" />
+        <RequiredItem identifier="steel" amount="2" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+        <RequiredItem identifier="plastic" amount="2" />
+      </Fabricate>
       <Deconstruct time="10">
         <Item identifier="steel" />
         <Item identifier="titaniumaluminiumalloy" />
@@ -709,21 +741,12 @@
         <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
         <RequiredSkill identifier="weapons" level="60" />
       </RangedWeapon>
-      <LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
-        <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
-          <Conditional IsDead="false" />
-        </StatusEffect>
-        <LightTexture texture="Content/Lights/lightcone.png" origin="-0.022, 0.5" size="1.0,0.9" />
-      </LightComponent>
-      <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
-        <GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI" />
-        <TickBox text="Flash">
-          <StatusEffect type="OnUse" targettype="This" IsOn="true" />
-          <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
-        </TickBox>
-      </CustomInterface>
-      <ItemContainer capacity="1" maxstacksize="6" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
-        <Containable items="shotgunammo" />
+      <ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+        <Containable items="shotgunammo" hide="true" />
+        <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+        <SubContainer capacity="1" maxstacksize="1">
+          <Containable items="flashlight" hide="true" itempos="26,-3" setactive="true" />
+        </SubContainer>
       </ItemContainer>
       <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
       <Quality>
@@ -740,7 +763,7 @@
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
         <Attack structuredamage="5" targetforce="5" itemdamage="10" severlimbsprobability="0.1">
           <Affliction identifier="bleeding" strength="12.5" />
-          <Affliction identifier="gunshotwound" strength="12" />
+          <Affliction identifier="gunshotwound" strength="10" />
           <Affliction identifier="stun" strength="0.15" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
