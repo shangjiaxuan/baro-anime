@@ -48,10 +48,10 @@
         <Price locationtype="mine" multiplier="1" minavailable="1" />
       </Price>
       <Deconstruct time="10" />
-      <Sprite name="Captain's Cap 2" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="209,124,91,46" origin="0.5,0.5" />
+      <Sprite name="Captain's Cap 2" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="209,113,105,68" origin="0.5,0.5" />
       <Body width="75" height="50" density="30" />
       <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-        <sprite name="Captain's Cap 2 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="209,124,91,46" origin="0.483,1.237" />
+        <sprite name="Captain's Cap 2 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="209,113,105,68" origin="0.5805,1" />
         <SkillModifier skillidentifier="helm" skillvalue="10" />
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
       </Wearable>
@@ -66,7 +66,9 @@
         <Price locationtype="military" multiplier="1" minavailable="1" />
         <Price locationtype="mine" multiplier="1" minavailable="1" />
       </Price>
-      <Deconstruct time="10" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon name="Captain's Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,0,128,99" origin="0.5,0.5" />
       <Sprite name="Captain's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -96,7 +98,9 @@
         <Price locationtype="military" multiplier="1" minavailable="1" />
         <Price locationtype="mine" multiplier="1" minavailable="1" />
       </Price>
-      <Deconstruct time="10" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon name="Captain's Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,0,128,99" origin="0.5,0.5" />
       <Sprite name="Captain's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="375,225,124,61" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -126,7 +130,9 @@
         <Price locationtype="military" multiplier="1" minavailable="1" />
         <Price locationtype="mine" multiplier="1" minavailable="1" />
       </Price>
-      <Deconstruct time="10" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon name="Captain's Uniform 3 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,0,128,99" origin="0.5,0.5" />
       <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />

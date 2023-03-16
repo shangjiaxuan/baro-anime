@@ -14,6 +14,9 @@
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="6,9" sheetelementsize="64,64" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <Sprite name="commoner 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="1,8,120,59" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -44,6 +47,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="4,9" sheetelementsize="64,64" />
       <Sprite name="commoner 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="0,72,119,69" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -75,6 +81,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <Sprite name="commoner 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="125,74,120,64" depth="0.6" origin="0.5,0.5" />
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="4,8" sheetelementsize="64,64" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -106,6 +115,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <Sprite name="commoner 4" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="0,148,119,59" depth="0.6" origin="0.5,0.5" />
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="5,9" sheetelementsize="64,64" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -137,6 +149,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <Sprite name="commoner 5" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="122,145,123,62" depth="0.6" origin="0.5,0.5" />
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="6,8" sheetelementsize="64,64" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -168,6 +183,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="1,8" sheetelementsize="64,64" />
       <Sprite name="crewchief" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,77,117,62" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -199,6 +217,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="7,8" sheetelementsize="64,64" />
       <Sprite name="medicalofficer" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="245,149,119,56" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -230,6 +251,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="0,9" sheetelementsize="64,64" />
       <Sprite name="miner" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="374,73,120,65" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -262,6 +286,9 @@
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="0,8" sheetelementsize="64,64" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <Sprite name="quartermaster" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="642,296,119,57" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -292,6 +319,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="7,9" sheetelementsize="64,64" />
       <Sprite name="researcher" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="376,147,118,57" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -323,6 +353,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="2,8" sheetelementsize="64,64" />
       <Sprite name="securitypatrol" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="376,3,121,63" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -354,6 +387,9 @@
         <Price storeidentifier="merchantmilitary" minavailable="1" />
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="3,8" sheetelementsize="64,64" />
       <Sprite name="administrator" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="905,160,119,57" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -385,6 +421,9 @@
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantmine" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="3,10" sheetelementsize="64,64" />
       <Sprite name="bandit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="510,224,120,63" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -416,6 +455,9 @@
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantmine" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="4,10" sheetelementsize="64,64" />
       <Sprite name="bandit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="643,224,119,65" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -446,7 +488,9 @@
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantmine" />
       </Price>
-      <Deconstruct time="10" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="1,9" sheetelementsize="64,64" />
       <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="769,3,118,64" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -478,7 +522,9 @@
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantmine" />
       </Price>
-      <Deconstruct time="10" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="2,9" sheetelementsize="64,64" />
       <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="896,7,125,63" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -510,7 +556,9 @@
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantmine" />
       </Price>
-      <Deconstruct time="10" />
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="3,9" sheetelementsize="64,64" />
       <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="906,78,117,69" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -542,6 +590,9 @@
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantmine" />
       </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="5,8" sheetelementsize="64,64" />
       <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="769,297,120,56" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
