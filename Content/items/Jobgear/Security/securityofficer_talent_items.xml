@@ -16,6 +16,9 @@
         <RequiredSkill identifier="mechanical" level="20" />
         <RequiredItem identifier="combatdivingsuit" />
         <RequiredItem identifier="rubber" />
+        <!-- clear the rest of the requirements -->
+        <RequiredItem />
+        <RequiredItem />
       </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="256,704,128,128" origin="0.5,0.5" />
       <Sprite name="Slipsuit Item" texture="%ModDir%/Content/Items/Jobgear/Security/Slipsuit_Items.png" sourcerect="0,0,160,120" depth="0.55" origin="0.4625,0.5" />
