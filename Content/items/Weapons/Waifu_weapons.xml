@@ -305,7 +305,7 @@
       <RequiredItems items="Blame_harpoonammo" targetslot="1" type="Contained" msg="ItemMsgSpearRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" slotsperrow="1" hideitems="true" containedstateindicatorslot="0,1" containedstateindicatorstyle="battery,spear">
+    <ItemContainer capacity="1" maxstacksize="1" slotsperrow="1" hideitems="false" containedstateindicatorslot="0,1" containedstateindicatorstyle="battery,spear">
       <Containable items="mobilebattery,Blame_mobilebattery" />
       <SlotIcon slotindex="0" texture="Content/UI/WeaponUI.png" sourcerect="64,961,32,22" origin="0.5,0.45" />
       <SlotIcon slotindex="1" texture="%ModDir%/Content/items/weapons/Waifu_UI.png" sourcerect="0,0,120,120" origin="0.5,0.5" />

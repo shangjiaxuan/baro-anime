@@ -2,18 +2,18 @@
 <Items>
   <Override>
     <item identifier="divingsuitlocker2">
-      <inherit identifier="divingsuitlocker2" package="">
+      <inherit identifier="divingsuitlocker2">
         <doinherit/>
         <replace sel="./ItemContainer/Containable/@items">
-          divingsuit,abyssdivingsuit,combatdivingsuit,pucs,slipsuit,Wf_pucs,Wf_pucs_R,Wf_pucs_B,Wf_pucs_D
+          divingsuit,abyssdivingsuit,combatdivingsuit,pucs,slipsuit,Wf_diving
         </replace>
       </inherit>
     </item>
     <item identifier="divingsuitlocker">
-      <inherit identifier="divingsuitlocker" package="">
+      <inherit identifier="divingsuitlocker">
         <doinherit/>
         <replace sel="./ItemContainer/Containable/@items">
-          divingsuit,abyssdivingsuit,combatdivingsuit,pucs,slipsuit,Wf_pucs,Wf_pucs_R,Wf_pucs_B,Wf_pucs_D
+          divingsuit,abyssdivingsuit,combatdivingsuit,pucs,slipsuit,Wf_diving
         </replace>
       </inherit>
     </item>

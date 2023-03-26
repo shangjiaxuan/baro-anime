@@ -9,12 +9,8 @@
         <add sel=".">
           <InventoryIcon name="Mechanic Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,198,128,99" origin="0.5,0.5" />
         </add>
-        <replace sel="./Wearable/sprite/@texture">
-          mechanic_1.png
-        </replace>
-        <replace sel="./Wearable/sprite/@hidelimb">
-          false
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">mechanic_1.png</replace>
+        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
         <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
           true
         </replace>
@@ -27,12 +23,8 @@
         <add sel=".">
           <InventoryIcon name="Mechanic Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,198,128,99" origin="0.5,0.5" />
         </add>
-        <replace sel="./Wearable/sprite/@texture">
-          mechanic_2.png
-        </replace>
-        <replace sel="./Wearable/sprite/@hidelimb">
-          false
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">mechanic_2.png</replace>
+        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
         <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
           true
         </replace>

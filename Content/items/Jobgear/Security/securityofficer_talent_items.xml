@@ -36,6 +36,9 @@
         <replace sel="./Wearable/sprite[@limb='Head']/@origin">
           0.51,0.51
         </replace>
+        <add sel="./Wearable">
+          <StatValue stattype="FlowResistance" value="0.45"/>
+        </add>
         <!--
         <del sel="./Wearable/StatusEffect/Sound"/>
         <add sel="./Wearable/StatusEffect">

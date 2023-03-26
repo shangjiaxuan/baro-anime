@@ -32,7 +32,7 @@
         <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
       </TickBox>
     </CustomInterface>
-    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+    <Wearable slots="OuterClothes+InnerClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="Wf_New_XD-01 Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" depth="0.7" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" sourcerect="429,103,45,108" origin="0.59,0.56037">
         <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="false" allowingameediting="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
@@ -130,7 +130,7 @@
       </SubContainer>
     </ItemContainer>
   </Item>
-  <Item name="" identifier="Wf_New_XDS-01_Engine" category="Equipment" tags="diving,provocative" cargocontaineridentifier="metalcrate" HideConditionBar="true" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_soft" isshootable="true" requireaimtouse="false">
+  <Item name="" identifier="Wf_New_XDS-01_Engine" category="Equipment" tags="diving,provocative,mediumitem" cargocontaineridentifier="metalcrate" HideConditionBar="true" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_soft" isshootable="true" requireaimtouse="false">
     <PreferredContainer primary="divingcab" />
     <Deconstruct time="10">
       <Item identifier="physicorium" />

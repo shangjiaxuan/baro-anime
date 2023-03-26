@@ -39,14 +39,17 @@
         <replace sel="./Wearable/sprite[@limb='Head']/@texture">
           %ModDir%/Content/Items/Jobgear/headgears.png
         </replace>
-        <replace sel="./Wearable/sprite[@limb='Head']/@origin">
-          0.5,0.56796
-        </replace>
+        <replace sel="./Wearable/sprite[@limb='Head']/@hidelimb">true</replace>
+        <replace sel="./Wearable/sprite[@limb='Head']/@origin">0.5,0.56796</replace>
+        <add sel="./Wearable">
+          <StatValue value="0.35" stattype="FlowResistance" />
+        </add>
         <del sel="./Wearable/StatusEffect/Sound"/>
         <add sel="./Wearable/StatusEffect">
           <Sound file="%ModDir%/Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true" />
           <Sound file="%ModDir%/Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true" />
         </add>
+        <add sel="./Wearable/damagemodifier[@afflictionidentifiers='huskinfection']/@damagemultiplier">0.5</add>
       </inherit>
     </Item>
     <Item identifier="underwaterscooter">

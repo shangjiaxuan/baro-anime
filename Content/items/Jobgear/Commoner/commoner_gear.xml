@@ -4,113 +4,99 @@
     <Item identifier="commonerclothes1">
       <inherit identifier="commonerclothes1">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          Commoner1.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">Commoner1.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="commonerclothes2">
       <inherit identifier="commonerclothes2">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          Commoner2.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">Commoner2.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="commonerclothes3">
       <inherit identifier="commonerclothes3">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          Commoner3.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">Commoner3.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="commonerclothes4">
       <inherit identifier="commonerclothes4">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          Commoner4.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">Commoner4.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="commonerclothes5">
       <inherit identifier="commonerclothes5">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          commoner_5.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">commoner_5.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="crewchiefclothes">
       <inherit identifier="crewchiefclothes">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          crewchief.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">crewchief.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="medicalofficerclothes">
       <inherit identifier="medicalofficerclothes">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          MedicalOfficer.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">MedicalOfficer.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="minerclothes">
       <inherit identifier="minerclothes">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          miner.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">miner.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="quartermasterclothes">
       <inherit identifier="quartermasterclothes">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          quartermaster.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">quartermaster.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="researcherclothes">
       <inherit identifier="researcherclothes">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          researcher.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">researcher.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="securitypatrolclothes">
       <inherit identifier="securitypatrolclothes">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          securitypatrol.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">securitypatrol.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="administratorclothes">
       <inherit identifier="administratorclothes">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          administrator.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">administrator.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="banditclothes1">
       <inherit identifier="banditclothes1">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          bandit_1.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">bandit_1.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="banditclothes2">
       <inherit identifier="banditclothes2">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          bandit_2.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">bandit_2.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <Item identifier="vipclothes1">
@@ -182,9 +168,8 @@
     <Item identifier="prisonerclothes">
       <inherit identifier="prisonerclothes">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          Prisoner.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">Prisoner.png</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
     </Item>
     <!-- UNIFORMS END -->

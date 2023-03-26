@@ -4,12 +4,39 @@
     <Item identifier="safetyharness">
       <inherit identifier="safetyharness">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          safetyharness.png
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">safetyharness.png</replace>
       </inherit>
       <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="198,132,67,57" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="58,326,143,40" depth="0.6" origin="0.5,0.5" />
+    </Item>
+    <Item identifier="makeshiftarmor">
+      <inherit identifier="makeshiftarmor">
+        <doinherit/>
+        <replace sel="./Wearable/@slots">Any,InnerClothes</replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Makeshift Armor Torso" texture="MakeshiftArmor.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Right Hand" texture="MakeshiftArmor.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Left Hand" texture="MakeshiftArmor.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Right Upper Arm" texture="MakeshiftArmor.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" SourceRect="272,0,64,92" Origin="0.5,0.521739" />
+          <sprite name="Makeshift Armor Left Upper Arm" texture="MakeshiftArmor.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" SourceRect="336,0,64,92" Origin="0.5,0.521739" />
+          <sprite name="Makeshift Armor Right Forearm" texture="MakeshiftArmor.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" SourceRect="272,92,64,68" Origin="0.5,0.52941" />
+          <sprite name="Makeshift Armor Left Forearm" texture="MakeshiftArmor.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" SourceRect="336,92,64,68" Origin="0.5,0.52941" />
+          <sprite name="Makeshift Armor Waist" texture="MakeshiftArmor.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Right Thigh" texture="MakeshiftArmor.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Left Thigh" texture="MakeshiftArmor.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Right Leg" texture="MakeshiftArmor.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Left Leg" texture="MakeshiftArmor.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Left Shoe" texture="MakeshiftArmor.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Makeshift Armor Right Shoe" texture="MakeshiftArmor.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />  
+        </add>
+      </inherit>
+    </Item>
+    <Item identifier="ironhelmet">
+      <inherit identifier="ironhelmet">
+        <doinherit/>
+        <replace sel="./Wearable/sprite/@texture">%ModDir%/Content/Items/Jobgear/headgears.png</replace>
+      </inherit>
     </Item>
   </Override>
 </Items>

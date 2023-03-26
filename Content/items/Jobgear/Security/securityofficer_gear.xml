@@ -9,16 +9,14 @@
         <add sel=".">
           <InventoryIcon name="Security Officer's Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="384,99,129,99" origin="0.5,0.5" />
         </add>
-        <replace sel="./Wearable/sprite/@texture">
-          SecurityOfficer1.png
-        </replace>
-        <replace sel="./Wearable/sprite/@hidelimb">
-          false
-        </replace>
-        <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='RightHand' or @limb='LeftHand']/@hidelimb">
-          true
-        </replace>
+        <replace sel="./Wearable/sprite/@texture">SecurityOfficer1.png</replace>
+        <replace sel="./Wearable/sprite/@hidelimb">true</replace>
+        <replace sel="./Wearable/sprite[@limb='Torso' or @limb='Waist' or @limb='RightThigh' or @limb='LeftThigh']/@hidelimb">false</replace>
       </inherit>
+      <ItemContainer capacity="1" slotsperrow="1" hideitems="false" ItemPos="0,0" ItemInterval="0,0" containedstateindicatorslot="0">
+        <Containable items="ammobox,coilgunammo" />
+        <SlotIcon slotindex="0" texture="%ModDir%/Content/items/weapons/Waifu_UI.png" sourcerect="0,0,120,120" origin="0.5,0.5" />
+      </ItemContainer>
     </Item>
     <Item identifier="securityuniform2">
       <inherit identifier="securityuniform2">
@@ -27,16 +25,28 @@
         <add sel=".">
           <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,297,128,99" origin="0.5,0.5" />
         </add>
-        <replace sel="./Wearable/sprite/@texture">
-          SecurityOfficer2.png
-        </replace>
-        <replace sel="./Wearable/sprite/@hidelimb">
-          false
-        </replace>
-        <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='RightHand' or @limb='LeftHand']/@hidelimb">
-          true
-        </replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Security Officer's Uniform 2 Torso" texture="SecurityOfficer2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Hand" texture="SecurityOfficer2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" SourceRect="272,172,64,40" Origin="0.44,0.48" />
+          <sprite name="Security Officer's Uniform 2 Left Hand" texture="SecurityOfficer2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" SourceRect="336,172,64,40" Origin="0.44,0.48" />
+          <sprite name="Security Officer's Uniform 2 Left Lower Arm" texture="SecurityOfficer2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" SourceRect="336,85,64,87" Origin="0.5,0.49425" />
+          <sprite name="Security Officer's Uniform 2 Right Lower Arm" texture="SecurityOfficer2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" SourceRect="272,85,64,87" Origin="0.5,0.49425" />
+          <sprite name="Security Officer's Uniform 2 Left Upper Arm" texture="SecurityOfficer2.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" SourceRect="336,0,64,85" Origin="0.5,0.564705" />
+          <sprite name="Security Officer's Uniform 2 Right Upper Arm" texture="SecurityOfficer2.png" limb="RightArm" hidelimb="false" inherittexturescale="true" SourceRect="272,0,64,85" Origin="0.5,0.564705" />
+          <sprite name="Security Officer's Uniform 2 Waist" texture="SecurityOfficer2.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Thigh" texture="SecurityOfficer2.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Left Thigh" texture="SecurityOfficer2.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Leg" texture="SecurityOfficer2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Left Leg" texture="SecurityOfficer2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Shoe" texture="SecurityOfficer2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" SourceRect="272,212,64,53" Origin="0.453125,0.45283" />
+          <sprite name="Security Officer's Uniform 2 Left Shoe" texture="SecurityOfficer2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" SourceRect="336,212,64,53" Origin="0.453125,0.45283" />  
+        </add>
       </inherit>
+      <ItemContainer capacity="1" maxstacksize="1" slotsperrow="1" hideitems="false" containedstateindicatorslot="0">
+        <Containable items="gunsmith" />
+        <SlotIcon slotindex="0" texture="Content/UI/InventoryUIAtlas.png" sourcerect="894,280,50,38" origin="0.5,0.5" />
+      </ItemContainer>
     </Item>
     <Item identifier="securityuniform3">
       <inherit identifier="securityuniform3">
@@ -55,6 +65,10 @@
           true
         </replace>
       </inherit>
+      <ItemContainer capacity="1" slotsperrow="1" hideitems="false" ItemPos="0,0" ItemInterval="0,0" containedstateindicatorslot="0">
+        <Containable items="ammobox,coilgunammo" />
+        <SlotIcon slotindex="0" texture="%ModDir%/Content/items/weapons/Waifu_UI.png" sourcerect="0,0,120,120" origin="0.5,0.5" />
+      </ItemContainer>
     </Item>
     <!-- UNIFORMS END -->
     <Item identifier="bodyarmor">
