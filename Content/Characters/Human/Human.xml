@@ -4,32 +4,10 @@
     <inherit identifier="Human" package="Vanilla">
       <doinherit/>
       <replace sel="./name">
-        <name firstname="%ModDir%/Content/Characters/Human/firstnames_[GENDER].txt" lastname="%ModDir%/Content/Characters/Human/lastnames.txt" />
+        <name firstname="%ModDir%/Content/Characters/Human/firstnames_female.txt" lastname="%ModDir%/Content/Characters/Human/lastnames.txt" />
       </replace>
-      <del sel="./sound"/>
-      <add sel=".">
-        <sound file="%ModDir%/Content/Characters/Human/female_damage1.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage2.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage3.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage4.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage5.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage6.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage7.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage8.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage9.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/female_damage10.ogg" gender="Female" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage1.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage2.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage3.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage4.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage5.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage6.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage7.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage8.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage9.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage10.ogg" gender="Male" state="Damage" range="500" volume="1" />
-        <sound file="%ModDir%/Content/Characters/Human/male_damage11.ogg" gender="Male" state="Damage" range="500" volume="1" />
-      </add>
+      <del sel="./sound[@Tags='Male']"/>
+      <del sel="./sound/@Tags"/>
       <replace sel="./HeadAttachments/Wearable[@type='Hair' and (@tags='male' or @gender='male')]/sprite/@texture">
         %ModDir%/Content/Characters/Human/Human_male_hair.png
       </replace>
@@ -45,6 +23,7 @@
       <replace sel="./HeadAttachments/Wearable[@type='Herpes']/sprite/@texture">
         %ModDir%/Content/Characters/Human/Human_karma.png
       </replace>
+      <del sel="./HeadAttachments/Wearable[@type='Beard']"/>
     </inherit>
     <ragdolls folder="default" />
     <animations folder="default" />
