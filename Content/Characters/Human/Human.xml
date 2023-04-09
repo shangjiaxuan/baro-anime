@@ -8,12 +8,58 @@
       </replace>
       <del sel="./sound[@Tags='Male']"/>
       <del sel="./sound/@Tags"/>
-      <replace sel="./HeadAttachments/Wearable[@type='Hair' and (@tags='male' or @gender='male')]/sprite/@texture">
-        %ModDir%/Content/Characters/Human/Human_male_hair.png
-      </replace>
-      <replace sel="./HeadAttachments/Wearable[@type='Hair' and (@tags='female' or @gender='female')]/sprite/@texture">
-        %ModDir%/Content/Characters/Human/Human_male_hair.png
-      </replace>
+      <del sel="./sound[@Tags='Male']"/>
+      <del sel="./HeadAttachments/Wearable[@type='Hair']"/>
+      <add sel="./HeadAttachments">
+        <Wearable type="Hair">
+          <sprite name="Hair 1" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="0,0" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="1">
+          <sprite name="Hair 2" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="1,0" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="1">
+          <sprite name="Hair 3" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="2,0" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="1">
+          <sprite name="Hair 4" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="3,0" />
+        </Wearable>
+        <Wearable type="Hair" >
+          <sprite name="Hair 5" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="0,1" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="5">
+          <sprite name="Hair 6" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="1,1" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="5">
+          <sprite name="Hair 7" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="2,1" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="5">
+          <sprite name="Hair 8" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="3,1" />
+        </Wearable>
+        <Wearable type="Hair" >
+          <sprite name="Hair 9" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="0,2" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="9">
+          <sprite name="Hair 10" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="1,2" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="9">
+          <sprite name="Hair 11" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="2,2" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="9">
+          <sprite name="Hair 12" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="3,2" />
+        </Wearable>
+        <Wearable type="Hair">
+          <sprite name="Hair 13" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="0,3" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="13">
+          <sprite name="Hair 14" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="1,3" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="13">
+          <sprite name="Hair 15" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="2,3" />
+        </Wearable>
+        <Wearable type="Hair" replacewhenwearinghat="13">
+          <sprite name="Hair 16" texture="%ModDir%/Content/Characters/Human/Human_female_hair.png" sheetindex="3,3" />
+        </Wearable>
+      </add>
       <replace sel="./HeadAttachments/Wearable[@type='FaceAttachment']/sprite/@texture">
         %ModDir%/Content/Characters/Human/Human_head_accessories.png
       </replace>
