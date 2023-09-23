@@ -4,6 +4,7 @@
     <ragdolls folder="default" />
     <animations folder="default" />
     <huskappendage affliction="huskinfection" path="Content/Characters/Humanhusk/Huskappendage.xml" />
+    <huskappendage affliction="husksymbiosis" path="Content/Characters/Humanhusk/Huskappendagesymbiosis.xml" />
     <huskappendage affliction="naturalmeleeweapon" path="Content/Characters/Humanhusk/Mudraptorbeak.xml" onlyfromafflictions="true" />
     <huskappendage affliction="naturalrangedweapon" path="Content/Characters/Humanhusk/Spinelingspine.xml" onlyfromafflictions="true" />
     <bloodemitter particle="blood" particleamount="5" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
