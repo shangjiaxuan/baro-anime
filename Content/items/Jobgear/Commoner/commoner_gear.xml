@@ -7,6 +7,11 @@
         <replace sel="./Wearable/sprite/@texture">Commoner1.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="commonerclothes2">
       <inherit identifier="commonerclothes2">
@@ -14,6 +19,11 @@
         <replace sel="./Wearable/sprite/@texture">Commoner2.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="commonerclothes3">
       <inherit identifier="commonerclothes3">
@@ -21,6 +31,11 @@
         <replace sel="./Wearable/sprite/@texture">Commoner3.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="commonerclothes4">
       <inherit identifier="commonerclothes4">
@@ -28,6 +43,11 @@
         <replace sel="./Wearable/sprite/@texture">Commoner4.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="commonerclothes5">
       <inherit identifier="commonerclothes5">
@@ -35,6 +55,11 @@
         <replace sel="./Wearable/sprite/@texture">commoner_5.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="crewchiefclothes">
       <inherit identifier="crewchiefclothes">
@@ -42,6 +67,11 @@
         <replace sel="./Wearable/sprite/@texture">crewchief.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="medicalofficerclothes">
       <inherit identifier="medicalofficerclothes">
@@ -49,6 +79,11 @@
         <replace sel="./Wearable/sprite/@texture">MedicalOfficer.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="minerclothes">
       <inherit identifier="minerclothes">
@@ -56,6 +91,11 @@
         <replace sel="./Wearable/sprite/@texture">miner.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="quartermasterclothes">
       <inherit identifier="quartermasterclothes">
@@ -63,6 +103,11 @@
         <replace sel="./Wearable/sprite/@texture">quartermaster.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="researcherclothes">
       <inherit identifier="researcherclothes">
@@ -70,6 +115,11 @@
         <replace sel="./Wearable/sprite/@texture">researcher.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="securitypatrolclothes">
       <inherit identifier="securitypatrolclothes">
@@ -84,6 +134,11 @@
         <replace sel="./Wearable/sprite/@texture">administrator.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="banditclothes1">
       <inherit identifier="banditclothes1">
@@ -91,6 +146,11 @@
         <replace sel="./Wearable/sprite/@texture">bandit_1.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="banditclothes2">
       <inherit identifier="banditclothes2">
@@ -98,6 +158,11 @@
         <replace sel="./Wearable/sprite/@texture">bandit_2.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="vipclothes1">
       <inherit identifier="vipclothes1">
@@ -121,6 +186,11 @@
           <sprite name="VIP's Clothes 1 Left Shoe" texture="VIP1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="vipclothes2">
       <inherit identifier="vipclothes2">
@@ -143,6 +213,11 @@
           <sprite name="VIP's Clothes 2 Left Shoe" texture="VIP2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="372,232,64,48" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="vipclothes3">
       <inherit identifier="vipclothes3">
@@ -164,6 +239,11 @@
           <sprite name="VIP's Clothes 3 Right Shoe" texture="VIP3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
           <sprite name="VIP's Clothes 3 Left Shoe" texture="VIP3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />        </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="prisonerclothes">
       <inherit identifier="prisonerclothes">
@@ -171,6 +251,11 @@
         <replace sel="./Wearable/sprite/@texture">Prisoner.png</replace>
         <replace sel="./Wearable/sprite[@limb='Torso']/@hidelimb">true</replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <!-- UNIFORMS END -->
   </Override>

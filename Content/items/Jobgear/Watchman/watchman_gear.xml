@@ -10,6 +10,11 @@
           true
         </replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
   </Override>
 </Items>

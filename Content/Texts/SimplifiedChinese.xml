@@ -36,8 +36,8 @@
   <entitydescription.Wf_debris>深海中发现的不明义体，外观与人类女性拥有极高的相似度，也许我们可以将其改造为潜水服使用</entitydescription.Wf_debris>
   <entityname.Wf_Research_Box>保险箱</entityname.Wf_Research_Box>
   <entitydescription.Wf_Research_Box>深海中发现的保险箱，在不起眼的地方隐约能看到联盟的标记</entitydescription.Wf_Research_Box>
-  <entityname.Wf_Research_chip>XDS-01设计图分离芯片</entityname.Wf_Research_chip>
-  <entitydescription.Wf_Research_chip>联盟保险箱中发现XDS-01设计图的分离芯片，使用了读取后即销毁被读取部分数据的设计</entitydescription.Wf_Research_chip>
+  <entityname.Wf_Research_chip>XDS-01设计图芯片</entityname.Wf_Research_chip>
+  <entitydescription.Wf_Research_chip>联盟保险箱中发现XDS-01设计图芯片，使用了读取后即销毁的设计</entitydescription.Wf_Research_chip>
   <entityname.Wf_Research_Log>XDS-01研究日志</entityname.Wf_Research_Log>
   <entitydescription.Wf_Research_Log>联盟保险箱中发现XDS-01的研究日志，内容已损坏无法阅读，但联盟可能会高价回收它</entitydescription.Wf_Research_Log>
   <!--
@@ -52,4 +52,52 @@
   <entitydescription.Wf_pucs_B>针对性改进型EPSP，使用防弹纤维与钛铝合金强化了防御力，在保持了优秀烧伤防御的同时拥有标准深渊潜水服的防御力与压力抵抗。</entitydescription.Wf_pucs_B>
   <entityname.Wf_pucs_D>特种作战EPSP</entityname.Wf_pucs_D>
   <entitydescription.Wf_pucs_D>针对性改进型EPSP，使用了低可见性涂装并针对性对人类武器强化了防御力，并配备了小型推进器以便作战人员在作战区域外快速转移。</entitydescription.Wf_pucs_D>
+  <Prisonerequipconfirmation>你想要给自己穿上拘束衣吗？</Prisonerequipconfirmation>
+  <entityname.machinepistolmagazine>机关手枪弹匣</entityname.machinepistolmagazine>
+  <entitydescription.machinepistolmagazine>机关手枪使用的弹匣，40发。</entitydescription.machinepistolmagazine>
+  <entityname.Mudraptorarmor>迅猛龙护甲</entityname.Mudraptorarmor>
+  <entitydescription.Mudraptorarmor>使用迅猛龙甲壳加工制成的盔甲，防御力稍逊于直接套上的迅猛龙甲壳，但是更轻便，防御的面积也更大。</entitydescription.Mudraptorarmor>
+  <entityname.Wf_Admiral_Katana_Mudraptor>迅猛龙太刀</entityname.Wf_Admiral_Katana_Mudraptor>
+  <entitydescription.Wf_Admiral_Katana_Mudraptor>使用迅猛龙材料强化制造的太刀，伤害和冲击力更大，但是需要双手使用。</entitydescription.Wf_Admiral_Katana_Mudraptor>
+  <!--New XDS-01-->
+  <entityname.New_XDS-01>XDS-01义体部件</entityname.New_XDS-01>
+  <entitydescription.New_XDS-01>使用在深海发现的不明改造人残骸制作的义体部件，可以将自己改造为改造人，但似乎没有提供还原的手段。</entitydescription.New_XDS-01>
+  <entityname.New_XDS-01_B>XDS-01义体部件(黑发)</entityname.New_XDS-01_B>
+  <entitydescription.New_XDS-01_B>使用在深海发现的不明改造人残骸制作的义体部件，可以将自己改造为改造人，但似乎没有提供还原的手段。</entitydescription.New_XDS-01_B>
+  <entityname.New_XDS-01_Core>XDS-01义体部件配件</entityname.New_XDS-01_Core>
+  <entitydescription.New_XDS-01_Core>通过联盟的研究芯片制作出来的不明部件，似乎原来与改造人是一体的，现在制成了可拆卸的部件。</entitydescription.New_XDS-01_Core>
+  <entityname.XDS_Remains>不明改造人残骸</entityname.XDS_Remains>
+  <entitydescription.XDS_Remains>在深海发现的不明改造人残骸，似乎已经被遗弃很久，与任何已知的外星造物都不一致，呈少女外观。</entitydescription.XDS_Remains>
+  <XDSequipconfirmation>你想要把自己改造成改造人吗？这会改变你的外貌并且不可以反悔。</XDSequipconfirmation>
+  <entityname.Xds_RepairKit>XDS-01义体维修套件</entityname.Xds_RepairKit>
+  <entitydescription.Xds_RepairKit>联盟通过改造人残骸逆向开发的XDS-01维修套件，可以对XDS-01改造人进行维修。</entitydescription.Xds_RepairKit>
+  <entityname.XDS-01_ChargingPod>XDS维护舱</entityname.XDS-01_ChargingPod>
+  <entitydescription.XDS-01_ChargingPod>联盟通过改造人残骸逆向开发的XDS-01维护舱，可以对XDS-01改造人充电。</entitydescription.XDS-01_ChargingPod>
+  <entityname.Xds_Excitant>XDS-01义体能量兴奋剂</entityname.Xds_Excitant>
+  <entitydescription.Xds_Excitant>联盟通过改造人残骸逆向开发的XDS-01应急充电装置，对XDS-01改造人注射后可以少量恢复电量，但会对机体造成一定损伤。</entitydescription.Xds_Excitant>
+  <entityname.Wf_Research_chip_B>XDS-01维护舱设计图芯片</entityname.Wf_Research_chip_B>
+  <entitydescription.Wf_Research_chip_B>联盟保险箱中发现XDS-01维护舱的设计图芯片，使用了读取后即销毁的设计</entitydescription.Wf_Research_chip_B>
+  <XDS_Light.Active>照明模组</XDS_Light.Active>
+  <XdsPick>[[select]] 拆卸（需要扳手)</XdsPick>
+  <!--Afflictions description-->
+  <afflictiondescription.Cyborg.self>你现在是改造人，提升所有物理抗性并免疫感染。</afflictiondescription.Cyborg.self>
+  <afflictiondescription.Cyborg>这个角色已被改造成为改造人。</afflictiondescription.Cyborg>
+  <afflictiondescription.Repair.self>你正在维修。</afflictiondescription.Repair.self>
+  <afflictiondescription.Repair>这个改造人正在被维修。</afflictiondescription.Repair>
+  <afflictiondescription.Charging.self>你正在充电。</afflictiondescription.Charging.self>
+  <afflictiondescription.Charging>这个改造人正在充电。</afflictiondescription.Charging>
+  <afflictiondescription.ShutDown.self>你被关机了。</afflictiondescription.ShutDown.self>
+  <afflictiondescription.ShutDown>这个改造人被关机了。</afflictiondescription.ShutDown>
+  <afflictiondescription.Xds_Excitant.self>你被注射了能量兴奋剂，正在恢复电量。</afflictiondescription.Xds_Excitant.self>
+  <afflictiondescription.Xds_Excitant>这个改造人被注射了能量兴奋剂，正在恢复电量。</afflictiondescription.Xds_Excitant>
+  <afflictiondescription.Excitant_Overheat.self>你被注射了能量兴奋剂，机体出现异常发热。</afflictiondescription.Excitant_Overheat.self>
+  <afflictiondescription.Excitant_Overheat>这个改造人被注射了能量兴奋剂，机体出现异常发热。</afflictiondescription.Excitant_Overheat>
+  <!--Afflictions names-->
+  <afflictionname.cyborg>改造人</afflictionname.cyborg>
+  <afflictionname.Repair>维修中</afflictionname.Repair>
+  <afflictionname.Charging>充电中</afflictionname.Charging>
+  <afflictionname.ShutDown>视觉模块离线</afflictionname.ShutDown>
+  <afflictionname.Xds_Excitant>应急充电中</afflictionname.Xds_Excitant>
+  <afflictionname.Excitant_Overheat>机体过热</afflictionname.Excitant_Overheat>
+  <afflictionname.FullyCharged>已充满</afflictionname.FullyCharged>
 </infotexts>

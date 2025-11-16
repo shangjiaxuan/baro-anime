@@ -27,6 +27,11 @@
         <!-- it seems original witd removed clown's foot step sounds. I'll assume it's intentional -->
         <del sel="./Wearable/sprite[@limb='LeftFoot' or @limb='RightFoot']/@sound"/>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="clownmaskunique">
       <inherit identifier="clownmaskunique">
@@ -70,6 +75,11 @@
           0.6405527,0.5
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
   </Override>
 </Items>

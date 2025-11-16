@@ -67,6 +67,42 @@
         <del sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@hidewearablesoftype"/>
       </inherit>
     </Item>
+    <Item name="" identifier="captainsseparatistcap1" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+      <PreferredContainer primary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" />
+      <Price baseprice="75" requiredfaction="separatists">
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantresearch" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" minavailable="1" />
+        <Price storeidentifier="merchantmine" minavailable="1" />
+      </Price>
+      <Deconstruct time="10" />
+      <Sprite name="Captain's Cap 1" texture="%Moddir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="0,962,90,62" origin="0.5,0.5" />
+      <Body width="75" height="55" density="15" />
+      <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+        <sprite name="Captain's Cap 1 Wearable" texture="%Moddir%/Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="0,962,90,62" origin="0.56,1.0" />
+        <SkillModifier skillidentifier="helm" skillvalue="10" />
+        <damagemodifier afflictionidentifiers="blunttrauma,lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      </Wearable>
+    </Item>
+    <Item name="" identifier="captainsseparatistcap2" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+      <PreferredContainer primary="crewcab" amount="1" spawnprobability="0.1" notcampaign="true" />
+      <Price baseprice="75" requiredfaction="separatists">
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantresearch" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" minavailable="1" />
+        <Price storeidentifier="merchantmine" minavailable="1" />
+      </Price>
+      <Deconstruct time="10" />
+      <Sprite name="Captain's Cap 2" texture="%Moddir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="0,962,90,62" origin="0.5,0.5" />
+      <Body width="75" height="35" density="15" />
+      <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+        <sprite name="Captain's Cap 2 Wearable" texture="%Moddir%/Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="0,962,90,62" origin="0.56,1.0" />
+        <SkillModifier skillidentifier="helm" skillvalue="10" />
+        <damagemodifier afflictionidentifiers="blunttrauma,lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      </Wearable>
+    </Item>
     <!-- HATS END -->
 
     <!-- UNIFORMS START -->
@@ -95,6 +131,11 @@
           <sprite name="Captain's Uniform 1 Right Shoe" texture="captain_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="captainsuniform2">
       <inherit identifier="captainsuniform2">
@@ -121,6 +162,11 @@
           <sprite name="Captain's Uniform 2 Right Shoe" texture="captain_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
           </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="captainsuniform3">
       <inherit identifier="captainsuniform3">
@@ -150,6 +196,11 @@
           <sprite name="Captain's Uniform 3 Right Shoe" texture="captain_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <!-- UNIFORMS END -->
   </Override>

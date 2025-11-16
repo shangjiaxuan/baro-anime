@@ -14,6 +14,11 @@
           true
         </replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="orangejumpsuit2">
       <inherit identifier="orangejumpsuit2">
@@ -26,6 +31,57 @@
         <replace sel="./Wearable/sprite/@hidelimb">false</replace>
         <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
           true
+        </replace>
+      </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>>
+    <Item identifier="engineerseparatistsuniform1">
+      <inherit identifier="engineerseparatistsuniform1">
+        <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Engineer Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="384,396,128,99" origin="0.5,0.5" />
+        </add>
+        <replace sel="./Wearable/sprite/@texture">engineer_separatist_1.png</replace>
+        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
+        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
+          true
+        </replace>
+      </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>>
+    <Item identifier="engineerseparatistsuniform2">
+      <inherit identifier="engineerseparatistsuniform2">
+        <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Engineer Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="384,396,128,99" origin="0.5,0.5" />
+        </add>
+        <replace sel="./Wearable/sprite/@texture">engineer_separatist_2.png</replace>
+        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
+        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
+          true
+        </replace>
+      </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>>
+    <Item identifier="electriciansgoggles">
+      <inherit identifier="electriciansgoggles">
+        <doinherit/>
+        <replace sel="./Wearable/sprite">
+          <sprite name="Electrician's Wearable" texture="%Moddir%/Content/Items/JobGear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="0,866,113,96" origin="0.36106,0.461667" />
         </replace>
       </inherit>
     </Item>

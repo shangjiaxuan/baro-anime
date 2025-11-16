@@ -39,7 +39,7 @@
       <inherit identifier="piratebodyarmor">
         <doinherit />
         <replace sel="./Wearable/sprite">
-          <sprite name="Pirate Armor Wearable" texture="%ModDir%/Content/Map/Pirates/PirateEquip.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" ignorelimbscale="true" scale="0.65" inheritsourcerect="false" sourcerect="5,2,128,241" origin="0.56421875,0.5" />
+          <sprite name="Pirate Armor Wearable" texture="%ModDir%/Content/Map/Pirates/PirateEquip.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" ignorelimbscale="true" scale="0.65" inheritsourcerect="false" sourcerect="5,2,128,241" origin="0.56421875,0.48" />
         </replace>
       </inherit>
       <InventoryIcon texture="%ModDir%/Content/Map/Pirates/PirateEquip.png" sourcerect="5,2,128,241" origin="0.5,0.5" />
@@ -75,28 +75,38 @@
           <sprite name="Pirate Uniform 1 Right Shoe" texture="pirate_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />  
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="separatistcommoner1">
       <inherit identifier="separatistcommoner1">
         <doinherit />
         <del sel="./Wearable/sprite"/>
         <add sel="./Wearable">
-          <sprite name="Pirate Uniform 2 Torso" texture="pirate_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-          <sprite name="Pirate Uniform 2 Right Hand" texture="pirate_2.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-          <sprite name="Pirate Uniform 2 Left Hand" texture="pirate_2.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-          <sprite name="Pirate Uniform 2 Right Lower Arm" texture="pirate_2.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" SourceRect="272,0,64,92.5" Origin="0.5,0.518919" />
-          <sprite name="Pirate Uniform 2 Left Lower Arm" texture="pirate_2.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" SourceRect="336,0,64,92.5" Origin="0.5,0.518919" />
-          <sprite name="Pirate Uniform 2 Right Upper Arm" texture="pirate_2.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" SourceRect="272,92.5,64,67.5" origin="0.5,0.5259259" />
-          <sprite name="Pirate Uniform 2 Left Upper Arm" texture="pirate_2.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" SourceRect="336,92.5,64,67.5" origin="0.5,0.5259259" />
-          <sprite name="Pirate Uniform 2 Waist" texture="pirate_2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-          <sprite name="Pirate Uniform 2 Right Thigh" texture="pirate_2.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-          <sprite name="Pirate Uniform 2 Left Thigh" texture="pirate_2.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-          <sprite name="Pirate Uniform 2 Right Leg" texture="pirate_2.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-          <sprite name="Pirate Uniform 2 Left Leg" texture="pirate_2.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" SourceRect="80,128,74,128" origin="0.5405,0.5" />
-          <sprite name="Pirate Uniform 2 Left Shoe" texture="pirate_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-          <sprite name="Pirate Uniform 2 Right Shoe" texture="pirate_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Torso" texture="pirate_1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Right Hand" texture="pirate_1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Left Hand" texture="pirate_1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Right Lower Arm" texture="pirate_1.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Left Lower Arm" texture="pirate_1.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Right Upper Arm" texture="pirate_1.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Left Upper Arm" texture="pirate_1.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Waist" texture="pirate_1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Right Thigh" texture="pirate_1.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Left Thigh" texture="pirate_1.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Right Leg" texture="pirate_1.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Left Leg" texture="pirate_1.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Left Shoe" texture="pirate_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Pirate Uniform 1 Right Shoe" texture="pirate_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="separatistcommoner3">
       <inherit identifier="separatistcommoner3">
@@ -119,6 +129,11 @@
           <sprite name="Pirate Uniform 3 Right Shoe" texture="pirate_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
   </Override>
 </Items>

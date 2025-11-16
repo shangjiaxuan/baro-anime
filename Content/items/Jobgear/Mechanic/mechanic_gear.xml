@@ -15,6 +15,11 @@
           true
         </replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="bluejumpsuit2">
       <inherit identifier="bluejumpsuit2">
@@ -29,6 +34,49 @@
           true
         </replace>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>
+    <Item identifier="mechanicseparatistsuniform1">
+      <inherit identifier="mechanicseparatistsuniform1">
+        <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Mechanic Uniform 1 Icon" texture="%Moddir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,396,128,99" origin="0.5,0.5" />
+        </add>
+        <replace sel="./Wearable/sprite/@texture">mechanic_separatist_1.png</replace>
+        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
+        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
+          true
+        </replace>
+      </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>
+    <Item identifier="mechanicseparatistsuniform2">
+      <inherit identifier="mechanicseparatistsuniform2">
+        <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Mechanic Uniform 2 Icon" texture="%Moddir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,396,128,99" origin="0.5,0.5" />
+        </add>
+        <replace sel="./Wearable/sprite/@texture">mechanic_separatist_2.png</replace>
+        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
+        <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
+          true
+        </replace>
+      </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <!-- UNIFORMS END -->
     <Item identifier="baseballcap">

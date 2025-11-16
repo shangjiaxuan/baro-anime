@@ -49,6 +49,11 @@
           <sprite name="Medic Uniform 1 Left Shoe" texture="Medic1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="doctorsuniform2">
       <inherit identifier="doctorsuniform2">
@@ -75,6 +80,73 @@
           <sprite name="Medic Uniform 2 Left Shoe" texture="Medic2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />  
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>
+    <Item identifier="medicseparatistsuniform1">
+      <inherit identifier="medicseparatistsuniform1">
+        <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Medic Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,297,128,99" origin="0.5,0.5" />
+        </add>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Medic Uniform 1 Torso" texture="Medic_separatist_01.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,0,112,207" origin="0.49769565,0.44241" />
+          <sprite name="Medic Uniform 1 Right Hand" texture="Medic_separatist_01.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Hand" texture="Medic_separatist_01.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Lower Arm" texture="Medic_separatist_01.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Lower Arm" texture="Medic_separatist_01.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Upper Arm" texture="Medic_separatist_01.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Upper Arm" texture="Medic_separatist_01.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Waist" texture="Medic_separatist_01.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="160,207,112,61" />
+          <sprite name="Medic Uniform 1 Right Thigh" texture="Medic_separatist_01.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Thigh" texture="Medic_separatist_01.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Leg" texture="Medic_separatist_01.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Leg" texture="Medic_separatist_01.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Shoe" texture="Medic_separatist_01.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Shoe" texture="Medic_separatist_01.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        </add>
+      </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>
+        <Item identifier="medicseparatistsuniform2">
+      <inherit identifier="medicseparatistsuniform2">
+        <doinherit/>
+        <del sel="./InventoryIcon"/>
+        <add sel=".">
+          <InventoryIcon name="Medic Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,297,128,99" origin="0.5,0.5" />
+        </add>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Medic Uniform 2 Torso" texture="Medic_separatist_02.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,0,112,207" origin="0.49769565,0.44241" />
+          <sprite name="Medic Uniform 2 Right Hand" texture="Medic_separatist_02.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Hand" texture="Medic_separatist_02.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Lower Arm" texture="Medic_separatist_02.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Lower Arm" texture="Medic_separatist_02.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Upper Arm" texture="Medic_separatist_02.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Upper Arm" texture="Medic_separatist_02.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Waist" texture="Medic_separatist_02.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="160,207,112,61" />
+          <sprite name="Medic Uniform 2 Right Thigh" texture="Medic_separatist_02.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Thigh" texture="Medic_separatist_02.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Leg" texture="Medic_separatist_02.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Leg" texture="Medic_separatist_02.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Shoe" texture="Medic_separatist_02.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Shoe" texture="Medic_separatist_02.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        </add>
+      </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
   </Override>
 </Items>
