@@ -4,28 +4,35 @@
     <Item identifier="clownmask">
       <inherit identifier="clownmask">
         <doinherit/>
-        <replace sel="./Sprite/@texture">
-          %ModDir%/Content/Items/Jobgear/headgears.png
+        <replace sel="./Sprite">
+          <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="414,318,89,71" origin="0.5,0.5" scale="0.5" />
         </replace>
-        <replace sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@texture">
-          %ModDir%/Content/Items/Jobgear/headgears.png
-        </replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Clown Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.75" sourcerect="414,318,89,71" origin="0.5,0.656" />
+        </add>
       </inherit>
     </Item>
     <Item identifier="clowncostume">
       <inherit identifier="clowncostume">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          clown.png
-        </replace>
-        <replace sel="./Wearable/sprite/@hidelimb">
-          false
-        </replace>
-        <replace sel="./Wearable/sprite[@limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
-          true
-        </replace>
-        <!-- it seems original witd removed clown's foot step sounds. I'll assume it's intentional -->
-        <del sel="./Wearable/sprite[@limb='LeftFoot' or @limb='RightFoot']/@sound"/>
+        <del sel="./Wearable/sprite"/>
+        <add sel ="./Wearable">
+          <sprite name="Clown's Costume Torso" texture="clown.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Right Hand" texture="clown.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Left Hand" texture="clown.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Right Lower Arm" texture="clown.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Left Lower Arm" texture="clown.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Right Upper Arm" texture="clown.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Left Upper Arm" texture="clown.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Waist" texture="clown.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Right Thigh" texture="clown.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Left Thigh" texture="clown.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Right Leg" texture="clown.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Left Leg" texture="clown.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Left Shoe" texture="clown.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Clown's Costume Right Shoe" texture="clown.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        </add>
       </inherit>
       <ItemComponent>
         <StatusEffect type="OnWearing" target="Character">
@@ -36,43 +43,34 @@
     <Item identifier="clownmaskunique">
       <inherit identifier="clownmaskunique">
         <doinherit/>
-        <replace sel="./Sprite/@texture">
-          %ModDir%/Content/Items/Jobgear/headgears.png
+        <replace sel="./Sprite">
+          <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="414,391,89,80" origin="0.5,0.5" scale="0.5" />
         </replace>
-        <replace sel="./Sprite/@sourcerect">
-          414,391,89,80
-        </replace>
-        <replace sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@texture">
-          %ModDir%/Content/Items/Jobgear/headgears.png
-        </replace>
-        <replace sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@sourcerect">
-          414,391,89,80
-        </replace>
-        <replace sel="./Wearable[@limbtype='Head']/sprite[@limb='Head']/@origin">
-          0.6236,0.806
-        </replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Clown Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="414,391,89,80" origin="0.6236,0.806" />
+        </add>
       </inherit>
     </Item>
     <Item identifier="clownsuitunique">
       <inherit identifier="clownsuitunique">
         <doinherit/>
-        <replace sel="./Wearable/sprite/@texture">
-          clown_rare.png
-        </replace>
-        <replace sel="./Wearable/sprite[@limb='Torso' or @limb='RightHand' or @limb='LeftHand' or @limb='RightArm' or @limb='LeftArm' or @limb='RightForearm' or @limb='LeftForearm']/@hidelimb">
-          false
-        </replace>
-        <replace sel="./Wearable/sprite[@limb='Torso']/@inheritorigin">
-          false
-        </replace>
-        <replace sel="./Wearable/sprite[@limb='Torso']/@inheritsourcerect">
-          false
-        </replace>
-        <add sel="./Wearable/sprite[@limb='Torso']/@sourcerect">
-          160,0,112,192
-        </add>
-        <add sel="./Wearable/sprite[@limb='Torso']/@origin">
-          0.6405527,0.5
+        <del sel="./Wearable/sprite"/>
+        <add sel ="./Wearable">
+          <sprite name="Legendary Clown's Costume Torso" texture="clown_rare.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,0,112,192" origin="0.6405527,0.4832325" />
+          <sprite name="Legendary Clown's Costume Right Hand" texture="clown_rare.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Left Hand" texture="clown_rare.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Right Lower Arm" texture="clown_rare.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Left Lower Arm" texture="clown_rare.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Right Upper Arm" texture="clown_rare.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Left Upper Arm" texture="clown_rare.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Waist" texture="clown_rare.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Right Thigh" texture="clown_rare.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Left Thigh" texture="clown_rare.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Right Leg" texture="clown_rare.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Left Leg" texture="clown_rare.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Left Shoe" texture="clown_rare.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Legendary Clown's Costume Right Shoe" texture="clown_rare.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         </add>
       </inherit>
       <ItemComponent>

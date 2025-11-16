@@ -5,15 +5,26 @@
     <Item identifier="bluejumpsuit1">
       <inherit identifier="bluejumpsuit1">
         <doinherit/>
-        <del sel="./InventoryIcon"/>
-        <add sel=".">
-          <InventoryIcon name="Mechanic Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,198,128,99" origin="0.5,0.5" />
-        </add>
-        <replace sel="./Wearable/sprite/@texture">mechanic_1.png</replace>
-        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
-        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
-          true
+        <replace sel="./InventoryIcon">
+          <InventoryIcon name="Mechanic Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,396,128,99" origin="0.5,0.5" />
         </replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Mechanic's Uniform 1 Torso" texture="mechanic_1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Hand" texture="mechanic_1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Hand" texture="mechanic_1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Lower Arm" texture="mechanic_1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Lower Arm" texture="mechanic_1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Upper Arm" texture="mechanic_1.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Upper Arm" texture="mechanic_1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Waist" texture="mechanic_1.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Thigh" texture="mechanic_1.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Thigh" texture="mechanic_1.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Leg" texture="mechanic_1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Leg" texture="mechanic_1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Shoe" texture="mechanic_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Shoe" texture="mechanic_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        </add>
       </inherit>
       <ItemComponent>
         <StatusEffect type="OnWearing" target="Character">
@@ -24,15 +35,26 @@
     <Item identifier="bluejumpsuit2">
       <inherit identifier="bluejumpsuit2">
         <doinherit/>
-        <del sel="./InventoryIcon"/>
-        <add sel=".">
-          <InventoryIcon name="Mechanic Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,198,128,99" origin="0.5,0.5" />
-        </add>
-        <replace sel="./Wearable/sprite/@texture">mechanic_2.png</replace>
-        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
-        <replace sel="./Wearable/sprite[@limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
-          true
+        <replace sel="./InventoryIcon">
+          <InventoryIcon name="Mechanic Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,396,128,99" origin="0.5,0.5" />
         </replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Mechanic's Uniform 2 Torso" texture="mechanic_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Hand" texture="mechanic_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Hand" texture="mechanic_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Lower Arm" texture="mechanic_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Lower Arm" texture="mechanic_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Upper Arm" texture="mechanic_2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Upper Arm" texture="mechanic_2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Waist" texture="mechanic_2.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Thigh" texture="mechanic_2.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Thigh" texture="mechanic_2.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Leg" texture="mechanic_2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Leg" texture="mechanic_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Shoe" texture="mechanic_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Shoe" texture="mechanic_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        </add>
       </inherit>
       <ItemComponent>
         <StatusEffect type="OnWearing" target="Character">
@@ -43,15 +65,26 @@
     <Item identifier="mechanicseparatistsuniform1">
       <inherit identifier="mechanicseparatistsuniform1">
         <doinherit/>
-        <del sel="./InventoryIcon"/>
-        <add sel=".">
+        <replace sel="./InventoryIcon">
           <InventoryIcon name="Mechanic Uniform 1 Icon" texture="%Moddir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,396,128,99" origin="0.5,0.5" />
-        </add>
-        <replace sel="./Wearable/sprite/@texture">mechanic_separatist_1.png</replace>
-        <replace sel="./Wearable/sprite/@hidelimb">false</replace>
-        <replace sel="./Wearable/sprite[@limb='RightHand' or @limb='LeftHand' or @limb='RightForearm' or @limb='LeftForearm' or @limb='Waist' or @limb='LeftFoot' or @limb='RightFoot']/@hidelimb">
-          true
         </replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Mechanic's Uniform 1 Torso" texture="mechanic_separatist_1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Hand" texture="mechanic_separatist_1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Hand" texture="mechanic_separatist_1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Lower Arm" texture="mechanic_separatist_1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Lower Arm" texture="mechanic_separatist_1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Upper Arm" texture="mechanic_separatist_1.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Upper Arm" texture="mechanic_separatist_1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Waist" texture="mechanic_separatist_1.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Thigh" texture="mechanic_separatist_1.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Thigh" texture="mechanic_separatist_1.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Leg" texture="mechanic_separatist_1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Leg" texture="mechanic_separatist_1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Left Shoe" texture="mechanic_separatist_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 1 Right Shoe" texture="mechanic_separatist_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        </add>
       </inherit>
       <ItemComponent>
         <StatusEffect type="OnWearing" target="Character">
@@ -62,6 +95,26 @@
     <Item identifier="mechanicseparatistsuniform2">
       <inherit identifier="mechanicseparatistsuniform2">
         <doinherit/>
+        <replace sel="./InventoryIcon">
+          <InventoryIcon name="Mechanic Uniform 2 Icon" texture="%Moddir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,396,128,99" origin="0.5,0.5" />
+        </replace>
+        <del sel="./Wearable/sprite"/>
+        <add sel="./Wearable">
+          <sprite name="Mechanic's Uniform 2 Torso" texture="mechanic_separatist_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Hand" texture="mechanic_separatist_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Hand" texture="mechanic_separatist_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Lower Arm" texture="mechanic_separatist_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Lower Arm" texture="mechanic_separatist_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Upper Arm" texture="mechanic_separatist_2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Upper Arm" texture="mechanic_separatist_2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Waist" texture="mechanic_separatist_2.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Thigh" texture="mechanic_separatist_2.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Thigh" texture="mechanic_separatist_2.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Leg" texture="mechanic_separatist_2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Leg" texture="mechanic_separatist_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Shoe" texture="mechanic_separatist_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Shoe" texture="mechanic_separatist_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        </add>
         <del sel="./InventoryIcon"/>
         <add sel=".">
           <InventoryIcon name="Mechanic Uniform 2 Icon" texture="%Moddir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,396,128,99" origin="0.5,0.5" />

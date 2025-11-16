@@ -2,13 +2,15 @@
 <Override>
   <Talents>
     <Talent identifier="munitionsexpertise">
-      <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.smgmagazine,entityname.shotgunshell,entityname.machinepistolmagazine" color="gui.orange" />
-      </Description>
-      <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,3" sheetelementsize="128,128" />
-      <AddedRecipe itemidentifier="smgmagazine" />
-      <AddedRecipe itemidentifier="machinepistolmagazine" />
-      <AddedRecipe itemidentifier="shotgunshell" />
+      <inherit identifier="munitionsexpertise">
+        <doinherit/>
+        <replace sel="./Description/Replace/@value">
+          entityname.smgmagazine,entityname.shotgunshell,entityname.machinepistolmagazine
+        </replace>
+        <add sel = ".">
+          <AddedRecipe itemidentifier="machinepistolmagazine" />
+        </add>
+      </inherit>
     </Talent>
   </Talents>
 </Override>

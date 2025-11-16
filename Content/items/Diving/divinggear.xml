@@ -18,17 +18,17 @@
     <Item identifier="divingsuit">
       <inherit identifier="divingsuit">
         <doinherit/>
-        <!-- item sprite on ground -->
-        <replace sel="./Sprite/@texture">
-          %ModDir%/Content/Items/Diving/DivingSuit_Item.png
+        <!-- item sprite on ground -->]
+        <replace sel = "./Sprite">
+          <Sprite name="Diving Suit Item" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,0,160,120" depth="0.55" origin="0.4625,0.5" />
         </replace>
         <!-- contained sprite, Vertical Locker -->
-        <replace sel="./ContainedSprite[@allowedcontainertags='divingsuitcontainervertical']/@texture">
-          %ModDir%/Content/Items/Diving/DivingSuit_Item.png
+        <replace sel="./ContainedSprite[@allowedcontainertags='divingsuitcontainervertical']">
+          <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="181,0,107,212" depth="0.55" origin="0.5,0.45519" />
         </replace>
         <!-- contained sprite, Horizontal Locker -->
-        <replace sel="./ContainedSprite[@allowedcontainertags='divingsuitcontainerhorizontal']/@texture">
-          %ModDir%/Content/Items/Diving/DivingSuit_Item.png
+        <replace sel="./ContainedSprite[@allowedcontainertags='divingsuitcontainerhorizontal']">
+           <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
         </replace>
         <!-- worn clothing sprites -->
         <!-- replace all first, then replace the head that stands out -->
@@ -96,6 +96,11 @@
           <Sound file="%ModDir%/Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item identifier="combatdivingsuit">
       <inherit identifier="combatdivingsuit">
@@ -130,6 +135,11 @@
           <Sound file="%ModDir%/Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true" />
         </add>
       </inherit>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
   </Items>
 </Override>

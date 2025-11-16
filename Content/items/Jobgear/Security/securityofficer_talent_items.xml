@@ -67,7 +67,7 @@
         <replace sel="./Wearable/@slots">OuterClothes,Bag</replace>
         <del sel="./Wearable/sprite"/>
         <add sel="./Wearable">
-          <sprite name="Security Vest" texture="%ModDir%/Content/Items/JobGear/Security/SecurityVest.png" limb="Torso" hidelimb="false" sourcerect="0,52,79,118" inherittexturescale="true" origin="0.45,0.520338" />
+           <sprite name="Security Vest" texture="%ModDir%/Content/Items/JobGear/Security/SecurityVest.png" limb="Torso" hidelimb="false" sourcerect="0,52,79,118" inherittexturescale="true" origin="0.45,0.5420338" />
         </add>
       </inherit>
     </Item>
