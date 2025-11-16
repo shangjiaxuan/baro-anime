@@ -53,6 +53,11 @@
         <StatValue stattype="SwimmingSpeed" value="0.45" />
         <StatValue stattype="WalkingSpeed" value="-0.6" />
       </Wearable>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item name="" identifier="bandolier" category="Equipment" tags="mediumitem,clothing" scale="0.5" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
       <PreferredContainer primary="armcab" secondary="secarmcab" />
@@ -76,7 +81,7 @@
       <Sprite texture="%ModDir%/Content/Items/JobGear/Security/SecurityVest.png" sourcerect="0,52,79,107" depth="0.6" origin="0.5,0.5" />
       <Body radius="30" height="30" density="25" />
       <Wearable slots="Bag" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Security Vest" texture="%ModDir%/Content/Items/JobGear/Security/SecurityVest.png" limb="Torso" hidelimb="false" sourcerect="0,52,79,118" inherittexturescale="true" origin="0.45,0.520338" />
+        <sprite name="Security Vest" texture="%ModDir%/Content/Items/JobGear/Security/SecurityVest.png" limb="Torso" hidelimb="false" sourcerect="0,52,79,118" inherittexturescale="true" origin="0.45,0.5420338" />
         <SkillModifier skillidentifier="weapons" skillvalue="15" />
         <StatValue stattype="RangedAttackSpeed" value="0.25" />
         <StatValue stattype="TurretAttackSpeed" value="0.25" />

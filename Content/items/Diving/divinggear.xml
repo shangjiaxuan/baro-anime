@@ -77,8 +77,8 @@
       <!--
     <Sprite name="Diving Suit" texture="DivingSuit_Item.png" sourcerect="157,0,90,307" depth="0.55" origin="0.4888889,0.5439739" />
     -->
-      <Sprite name="Diving Suit Item" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,0.5" />
+      <Sprite name="Diving Suit Item" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,0,160,120" depth="0.55" origin="0.4625,0.5" />
+      <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="181,0,107,212" depth="0.55" origin="0.5,0.45519" />
       <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Containers/containers.png" sourcerect="724,373,77,209" depth="0.55" origin="-0.12,-0.14" />
       <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
       <Body radius="45" width="34" density="15" />
@@ -143,6 +143,11 @@
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       </Wearable>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Afflictions identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
       <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use">
         <Upgrade gameversion="0.1401.0.0" msg="ItemMsgPickUpUse" />
       </Holdable>
@@ -295,6 +300,11 @@
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       </Wearable>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Afflictions identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
       <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
       <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
         <Containable items="oxygensource,weldingtoolfuel" />
@@ -404,6 +414,11 @@
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       </Wearable>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Afflictions identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
       <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
       <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
         <Containable items="oxygensource,weldingtoolfuel" />

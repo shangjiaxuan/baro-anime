@@ -56,6 +56,11 @@
         <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagesound="LimbClown" />
         <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagesound="LimbClown" />
       </Wearable>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <Item name="" identifier="clownmaskunique" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,clownmask" description="" hideinmenus="true" scale="0.5">
       <Price baseprice="1" soldeverywhere="false" canbespecial="false">
@@ -95,7 +100,7 @@
         <Item identifier="bikehorn" />
       </Deconstruct>
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-        <sprite name="Legendary Clown's Costume Torso" texture="clown_rare.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,0,112,192" origin="0.6405527,0.5" />
+        <sprite name="Legendary Clown's Costume Torso" texture="clown_rare.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,0,112,192" origin="0.6405527,0.4832325" />
         <sprite name="Legendary Clown's Costume Right Hand" texture="clown_rare.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Legendary Clown's Costume Left Hand" texture="clown_rare.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Legendary Clown's Costume Right Lower Arm" texture="clown_rare.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -113,6 +118,11 @@
         <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagesound="LimbClown" />
         <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagesound="LimbClown" />
       </Wearable>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
   </Items>
 </Override>

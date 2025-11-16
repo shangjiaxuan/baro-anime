@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Waifu in the Deep v0.5a" modversion="0.5a" corepackage="False" steamworkshopid="2655395672" gameversion="1.0.9.0" expectedhash="8AB8807866C9E438CDB02ED3041EA973">
+<contentpackage name="Waifu in the Deep v0.9a" modversion="0.9a" corepackage="False" steamworkshopid="2655395672" gameversion="1.10.7.1" expectedhash="277013E0BE752803A74D41DC71D933A2">
   <Item file="%ModDir%/Content/Map/Pirates/PirateItems.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/misc.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/Assistant/assistant_talent_items.xml" />
@@ -20,9 +20,11 @@
   <Item file="%ModDir%/Content/items/Jobgear/Commoner/commoner_gear.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/Medic/medic_talent_items.xml" />
   <Item file="%ModDir%/Content/items/Containers/containers.xml" />
+  <Item file="%ModDir%/Content/items/Jobgear/Cultist/cultist_gear.xml" />
   <Character file="%ModDir%/Content/Characters/Human/Human.xml" />
   <Character file="%ModDir%/Content/Characters/Humanhusk/Humanhusk.xml" />
   <Text file="%ModDir%/Content/Texts/SimplifiedChinese.xml" />
+  <Text file="%ModDir%/Content/Texts/SimplifiedChineseVanilla.xml" />
   <Text file="%ModDir%/Content/Texts/English.xml" />
   <Jobs file="%ModDir%/Content/Jobs.xml" />
   <Particles file="%ModDir%/Content/Particles/ParticlePrefabs.xml" />
@@ -163,12 +165,13 @@
   <Other file="%ModDir%/Content/items/Weapons/Overrided.png" />
   <Other file="%ModDir%/Content/Particles/ParticleAtlas2.png" />
   <NPCSets file="%ModDir%/Content/Map/Outposts/OutpostGenerationNpcs.xml" />
+  <Item file="%ModDir%/Content/items/tools/tools.xml" />
+  <Item file="%ModDir%/Content/items/New/Wf_New_divingsuit.xml" />
   <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01.png" />
   <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Items.png" />
   <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Lights.png" />
   <Other file="%ModDir%/Content/items/New/Wf_New_XDS-01_Engine_Items.png" />
   <Other file="%ModDir%/Content/items/New/Wf_New_Materials.png" />
-  <Item file="%ModDir%/Content/items/New/Wf_New_divingsuit.xml" />
   <Other file="%ModDir%/Content/Items/Weapons/G.B.E shooting.ogg" />
   <Other file="%ModDir%/Content/Items/Weapons/G.B.E Charging.ogg" />
   <Other file="%ModDir%/Content/Items/Weapons/lights.png" />
@@ -176,4 +179,35 @@
   <Other file="%ModDir%/Content/Items/Weapons/light_Wakizashi.png" />
   <Other file="%ModDir%/Content/Items/Weapons/lightsprite.png" />
   <Other file="%ModDir%/Content/Items/Weapons/lightsaber.ogg" />
+  <Other file="%ModDir%/Content/items/Jobgear/Cultist/cultist.png" />
+  <Other file="%ModDir%/Content/items/Jobgear/Cultist/cultist2.png" />
+  <Other file="%ModDir%/Content/Characters/Human/Animations/HumanWalkPrisoner.xml" />
+  <Other file="%ModDir%/Content/Characters/Human/Animations/HumanRunPrisoner.xml" />
+  <Other file="%Moddir%/Content/items/Jobgear/Captain/captain_separatist_1.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Captain/captain_separatist_2.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Captain/captain_separatist_3.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/engineer/engineer_separatist_1.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/engineer/engineer_separatist_2.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Mechanic/mechanic_separatist_1.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Mechanic/mechanic_separatist_2.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Medic/Medic_separatist_01.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Medic/Medic_separatist_02.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Security/SecurityOfficer_separatist_1.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Security/SecurityOfficer_separatist_2.png" />
+  <Other file="%Moddir%/Content/items/Jobgear/Security/SecurityOfficer_separatist_3.png" />
+  <Other file="%Moddir%/Content/characters/Human/Animations/HumanRun-Heels.xml" />
+  <Other file="%Moddir%/Content/characters/Human/Animations/HumanWalk-Heels.xml" />
+  <Other file="%Moddir%/Content/characters/Human/Animations/HumanWalkPrisoner.xml" />
+  <Other file="%Moddir%/Content/characters/Human/Animations/HumanRunPrisoner.xml" />
+  <Other file="%Moddir%/Content/characters/Human/Animations/DrunkenRun-Heels.xml" />
+  <Other file="%Moddir%/Content/characters/Human/Animations/DrunkenWalk-Heels.xml" />
+  <Afflictions file="%ModDir%/Content/talents/assistant/AfflictionsAssistant.xml" />
+  <Afflictions file="%ModDir%/Content/Afflictions.xml" />
+  <Sounds file="%ModDir%/Content/Sounds/sounds.xml" />
+  <Talents file="%ModDir%/Content/Talents/Security/TalentsSecurity.xml" />
+  <Talents file="%ModDir%/Content/Talents/Mechanic/TalentsMechanic.xml" />
+  <Other file="%Moddir%/Content/items/New/New_XDS-01_Items.png" />
+  <Other file="%Moddir%/Content/items/New/New_XDS-01-W.png" />
+  <Other file="%Moddir%/Content/items/New/Wf_New_XDS-01_Lights.png" />
+  <Other file="%Moddir%/Content/items/New/New_XDS-01_Light.png" />
 </contentpackage>

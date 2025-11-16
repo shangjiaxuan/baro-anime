@@ -24,17 +24,22 @@
         <sprite name="Security Officer's Uniform 1 Left Hand" texture="SecurityOfficer1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="SecurityOfficer1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 1 Right Lower Arm" texture="SecurityOfficer1.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 1 Left Upper Arm" texture="SecurityOfficer1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 1 Right Upper Arm" texture="SecurityOfficer1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Left Upper Arm" texture="SecurityOfficer1.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Right Upper Arm" texture="SecurityOfficer1.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 1 Waist" texture="SecurityOfficer1.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 1 Right Thigh" texture="SecurityOfficer1.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 1 Left Thigh" texture="SecurityOfficer1.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 1 Right Leg" texture="SecurityOfficer1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 1 Left Leg" texture="SecurityOfficer1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Right Leg" texture="SecurityOfficer1.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Left Leg" texture="SecurityOfficer1.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 1 Right Shoe" texture="SecurityOfficer1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 1 Left Shoe" texture="SecurityOfficer1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+        <damagemodifier afflictionidentifiers="lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
       </Wearable>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
       <ItemContainer hideitems="true" capacity="1" maxstacksize="1" slotsperrow="1" containedstateindicatorslot="0">
         <Containable items="gunsmith" />
         <SlotIcon slotindex="0" texture="Content/UI/InventoryUIAtlas.png" sourcerect="894,280,50,38" origin="0.5,0.5" />
@@ -58,12 +63,12 @@
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Security Officer's Uniform 2 Torso" texture="SecurityOfficer2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 2 Right Hand" texture="SecurityOfficer2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" SourceRect="272,172,64,40" Origin="0.44,0.48" />
-        <sprite name="Security Officer's Uniform 2 Left Hand" texture="SecurityOfficer2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" SourceRect="336,172,64,40" Origin="0.44,0.48" />
+        <sprite name="Security Officer's Uniform 2 Right Hand" texture="SecurityOfficer2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" SourceRect="272,172,64,40" Origin="0.44,0.6" />
+        <sprite name="Security Officer's Uniform 2 Left Hand" texture="SecurityOfficer2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" SourceRect="336,172,64,40" Origin="0.44,0.6" />
         <sprite name="Security Officer's Uniform 2 Left Lower Arm" texture="SecurityOfficer2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" SourceRect="336,85,64,87" Origin="0.5,0.49425" />
         <sprite name="Security Officer's Uniform 2 Right Lower Arm" texture="SecurityOfficer2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" SourceRect="272,85,64,87" Origin="0.5,0.49425" />
-        <sprite name="Security Officer's Uniform 2 Left Upper Arm" texture="SecurityOfficer2.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" SourceRect="336,0,64,85" Origin="0.5,0.564705" />
-        <sprite name="Security Officer's Uniform 2 Right Upper Arm" texture="SecurityOfficer2.png" limb="RightArm" hidelimb="false" inherittexturescale="true" SourceRect="272,0,64,85" Origin="0.5,0.564705" />
+        <sprite name="Security Officer's Uniform 2 Left Upper Arm" texture="SecurityOfficer2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" SourceRect="336,0,64,85" Origin="0.5,0.564705" />
+        <sprite name="Security Officer's Uniform 2 Right Upper Arm" texture="SecurityOfficer2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" SourceRect="272,0,64,85" Origin="0.5,0.564705" />
         <sprite name="Security Officer's Uniform 2 Waist" texture="SecurityOfficer2.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 2 Right Thigh" texture="SecurityOfficer2.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 2 Left Thigh" texture="SecurityOfficer2.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -71,9 +76,14 @@
         <sprite name="Security Officer's Uniform 2 Left Leg" texture="SecurityOfficer2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 2 Right Shoe" texture="SecurityOfficer2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" SourceRect="272,212,64,53" Origin="0.453125,0.45283" />
         <sprite name="Security Officer's Uniform 2 Left Shoe" texture="SecurityOfficer2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" SourceRect="336,212,64,53" Origin="0.453125,0.45283" />
-        <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+        <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds,burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       </Wearable>
-      <ItemContainer capacity="1" maxstacksize="1" slotsperrow="1" hideitems="false" containedstateindicatorslot="0">
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer hideitems="true" capacity="1" maxstacksize="1" slotsperrow="1" containedstateindicatorslot="0">
         <Containable items="gunsmith" />
         <SlotIcon slotindex="0" texture="Content/UI/InventoryUIAtlas.png" sourcerect="894,280,50,38" origin="0.5,0.5" />
       </ItemContainer>
@@ -100,21 +110,149 @@
         <sprite name="Security Officer's Uniform 3 Left Hand" texture="SecurityOfficer3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 3 Left Lower Arm" texture="SecurityOfficer3.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 3 Right Lower Arm" texture="SecurityOfficer3.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 3 Left Upper Arm" texture="SecurityOfficer3.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 3 Right Upper Arm" texture="SecurityOfficer3.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 3 Waist" texture="SecurityOfficer3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Left Upper Arm" texture="SecurityOfficer3.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="336,0,64,92" origin="0.5,0.52174" />
+        <sprite name="Security Officer's Uniform 3 Right Upper Arm" texture="SecurityOfficer3.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="272,0,64,92" origin="0.5,0.52174" />
+        <sprite name="Security Officer's Uniform 3 Waist" texture="SecurityOfficer3.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 3 Right Thigh" texture="SecurityOfficer3.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 3 Left Thigh" texture="SecurityOfficer3.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 3 Right Leg" texture="SecurityOfficer3.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 3 Left Leg" texture="SecurityOfficer3.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 3 Right Shoe" texture="SecurityOfficer3.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Security Officer's Uniform 3 Left Shoe" texture="SecurityOfficer3.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Right Shoe" texture="SecurityOfficer3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Left Shoe" texture="SecurityOfficer3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+        <StatValue stattype="MovementSpeed" value="-0.2" />
       </Wearable>
-      <ItemContainer capacity="1" slotsperrow="1" hideitems="false" ItemPos="0,0" ItemInterval="0,0" containedstateindicatorslot="0">
-        <Containable items="ammobox,coilgunammo" />
-        <SlotIcon slotindex="0" texture="%ModDir%/Content/items/weapons/Waifu_UI.png" sourcerect="0,0,120,120" origin="0.5,0.5" />
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="2" maxstacksize="1" slotsperrow="2" hideitems="true" containedstateindicatorslot="0">
+        <Containable items="Ammobox" />
+        <SlotIcon slotindex="0" texture="%ModDir%/Content/items/Weapons/Waifu_UI.png" sourcerect="0,0,120,120" origin="0.5,0.5" />
+        <SlotIcon slotindex="1" texture="%ModDir%/Content/items/Weapons/Waifu_UI.png" sourcerect="0,0,120,120" origin="0.5,0.5" />
+        <SubContainer capacity="4" maxstacksize="12">
+          <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
+        </SubContainer>
       </ItemContainer>
+    </Item>
+    <Item name="" identifier="securityseparatistsuniform1" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+      <PreferredContainer primary="crewcab" />
+      <PreferredContainer secondary="outpostcrewcabinet" />
+      <Price baseprice="150" minavailable="1" requiredfaction="separatists">
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantresearch" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" minavailable="1" />
+        <Price storeidentifier="merchantmine" minavailable="1" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
+      <InventoryIcon name="Security Officer's Uniform 1 Icon" texture="%Moddir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,297,128,99" origin="0.5,0.5" />
+      <Sprite name="Security Officer's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="3,434,115,59" depth="0.6" origin="0.5,0.5" />
+      <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+      <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+        <sprite name="Security Officer's Uniform 1 Torso" texture="SecurityOfficer_separatist_1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Right Hand" texture="SecurityOfficer_separatist_1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Left Hand" texture="SecurityOfficer_separatist_1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="SecurityOfficer_separatist_1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Right Lower Arm" texture="SecurityOfficer_separatist_1.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Left Upper Arm" texture="SecurityOfficer_separatist_1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Right Upper Arm" texture="SecurityOfficer_separatist_1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Waist" texture="SecurityOfficer_separatist_1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Right Thigh" texture="SecurityOfficer_separatist_1.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Left Thigh" texture="SecurityOfficer_separatist_1.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Right Leg" texture="SecurityOfficer_separatist_1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Left Leg" texture="SecurityOfficer_separatist_1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Right Shoe" texture="SecurityOfficer_separatist_1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 1 Left Shoe" texture="SecurityOfficer_separatist_1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.8" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.75" />
+        <StatusEffect type="OnWearing" target="Character">
+          <TriggerAnimation Type="Walk" FileName="HumanWalk-Heels" priority="1" ExpectedSpecies="Human" />
+          <TriggerAnimation Type="Run" FileName="HumanRun-Heels" priority="10" ExpectedSpecies="Human" />
+        </StatusEffect>
+      </Wearable>
+    </Item>
+    <Item name="" identifier="securityseparatistsuniform2" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+      <PreferredContainer primary="crewcab" />
+      <PreferredContainer secondary="outpostcrewcabinet" />
+      <Price baseprice="150" minavailable="1" requiredfaction="separatists">
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantresearch" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" minavailable="1" />
+        <Price storeidentifier="merchantmine" minavailable="1" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
+      <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="%Moddir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,297,128,99" origin="0.5,0.5" />
+      <Sprite name="Security Officer's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="257,422,118,70" depth="0.6" origin="0.5,0.5" />
+      <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+      <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+        <sprite name="Security Officer's Uniform 2 Torso" texture="SecurityOfficer_separatist_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Right Hand" texture="SecurityOfficer_separatist_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Left Hand" texture="SecurityOfficer_separatist_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Left Lower Arm" texture="SecurityOfficer_separatist_2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Right Lower Arm" texture="SecurityOfficer_separatist_2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Left Upper Arm" texture="SecurityOfficer_separatist_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Right Upper Arm" texture="SecurityOfficer_separatist_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Waist" texture="SecurityOfficer_separatist_2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Right Thigh" texture="SecurityOfficer_separatist_2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Left Thigh" texture="SecurityOfficer_separatist_2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Right Leg" texture="SecurityOfficer_separatist_2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Left Leg" texture="SecurityOfficer_separatist_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Right Shoe" texture="SecurityOfficer_separatist_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 2 Left Shoe" texture="SecurityOfficer_separatist_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.8" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.75" />
+        <StatusEffect type="OnWearing" target="Character">
+          <TriggerAnimation Type="Walk" FileName="HumanWalk-Heels" priority="1" ExpectedSpecies="Human" />
+          <TriggerAnimation Type="Run" FileName="HumanRun-Heels" priority="10" ExpectedSpecies="Human" />
+        </StatusEffect>
+      </Wearable>
+    </Item>
+    <Item name="" identifier="securityseparatistsuniform3" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+      <PreferredContainer primary="crewcab" />
+      <PreferredContainer secondary="outpostcrewcabinet" />
+      <Price baseprice="150" minavailable="1" requiredfaction="separatists">
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantresearch" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" minavailable="1" />
+        <Price storeidentifier="merchantmine" minavailable="1" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="organicfiber" />
+      </Deconstruct>
+      <InventoryIcon name="Security Officer's Uniform 3 Icon" texture="%Moddir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,297,128,99" origin="0.5,0.5" />
+      <Sprite name="Security Officer's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="127,433,122,62" depth="0.6" origin="0.5,0.5" />
+      <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+      <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+        <sprite name="Security Officer's Uniform 3 Torso" texture="SecurityOfficer_separatist_3.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Right Hand" texture="SecurityOfficer_separatist_3.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Left Hand" texture="SecurityOfficer_separatist_3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Left Lower Arm" texture="SecurityOfficer_separatist_3.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Right Lower Arm" texture="SecurityOfficer_separatist_3.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Left Upper Arm" texture="SecurityOfficer_separatist_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Right Upper Arm" texture="SecurityOfficer_separatist_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Waist" texture="SecurityOfficer_separatist_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Right Thigh" texture="SecurityOfficer_separatist_3.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Left Thigh" texture="SecurityOfficer_separatist_3.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Right Leg" texture="SecurityOfficer_separatist_3.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Left Leg" texture="SecurityOfficer_separatist_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Right Shoe" texture="SecurityOfficer_separatist_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Security Officer's Uniform 3 Left Shoe" texture="SecurityOfficer_separatist_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.8" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.75" />
+      </Wearable>
+      <ItemComponent>
+        <StatusEffect type="OnWearing" target="Character">
+          <Affliction identifier="Heels" amount="1" />
+        </StatusEffect>
+      </ItemComponent>
     </Item>
     <!-- UNIFORMS END -->
     <Item name="" identifier="bodyarmor" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
@@ -144,7 +282,7 @@
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
-        <sprite name="Security Vest Wearable" texture="%ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180" />
+        <sprite name="Security Vest Wearable" texture="%ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" sourcerect="13,16,103,188" />
       </Wearable>
     </Item>
     <!-- HEADGEAR START -->
@@ -242,7 +380,7 @@
         <RequiredSkill identifier="weapons" level="30" />
         <RequiredItem identifier="ballisticfiber" />
       </Fabricate>
-      <Sprite name="Ballistic Helmet 3" texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="4,213,85,90" depth="0.6" origin="0.5165,0.5" />
+      <Sprite name="Ballistic Helmet 3" texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="214,202,96,101" depth="0.6" origin="0.5165,0.5" />
       <Body radius="30" density="50" />
       <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
